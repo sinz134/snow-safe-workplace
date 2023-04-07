@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_suggestion_reader_group">
+    <sys_suggestion_reader_group action="INSERT_OR_UPDATE">
+        <click_in_mode>true</click_in_mode>
+        <context_config_id display_value="Safety Workplace Workspace - Workspace Search">9d5fa4a575c2e5902622ddb0148bfb93</context_config_id>
+        <limit>5</limit>
+        <order>100</order>
+        <section_header>Recent searches</section_header>
+        <suggestion_type>Recent Search Reader Group for Starter Workspace - Workspace Search</suggestion_type>
+        <sys_class_name>sys_suggestion_reader_group</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-06 17:28:38</sys_created_on>
+        <sys_id>595fa4a590c2e5906d8e56634e435a93</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Recent Search Reader Group for Starter Workspace - Workspace Search</sys_name>
+        <sys_package display_value="Safety Workplace" source="x_1007530_safety_0">21dae86197c2e59051637d271153af33</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Safety Workplace">21dae86197c2e59051637d271153af33</sys_scope>
+        <sys_update_name>sys_suggestion_reader_group_595fa4a590c2e5906d8e56634e435a93</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-06 17:28:38</sys_updated_on>
+    </sys_suggestion_reader_group>
+</record_update>

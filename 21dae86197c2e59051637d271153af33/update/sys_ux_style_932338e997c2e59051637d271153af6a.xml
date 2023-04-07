@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_style">
+    <sys_ux_style action="INSERT_OR_UPDATE">
+        <name>SW Workspace Theme</name>
+        <style>{&#13;
+    "properties": {&#13;
+  "--now-color_brand--primary": "102,103,171",&#13;
+  "--now-color_brand--secondary": "69,68,111",&#13;
+  "--now-color_brand--neutral": "79,86,100",&#13;
+  "--now-color--neutral-0": "255,255,255",&#13;
+  "--now-color--neutral-1": "246,246,248",&#13;
+  "--now-color--neutral-2": "227,229,233",&#13;
+  "--now-color--neutral-3": "211,214,220",&#13;
+  "--now-color--neutral-4": "192,197,205",&#13;
+  "--now-color--neutral-5": "176,181,191",&#13;
+  "--now-color--neutral-6": "159,164,176",&#13;
+  "--now-color--neutral-7": "143,149,161",&#13;
+  "--now-color--neutral-8": "125,133,146",&#13;
+  "--now-color--neutral-9": "110,117,131",&#13;
+  "--now-color--neutral-10": "93,100,115",&#13;
+  "--now-color--neutral-11": "79,86,100",&#13;
+  "--now-color--neutral-12": "69,77,91",&#13;
+  "--now-color--neutral-13": "61,68,82",&#13;
+  "--now-color--neutral-14": "53,59,73",&#13;
+  "--now-color--neutral-15": "44,50,63",&#13;
+  "--now-color--neutral-16": "37,42,53",&#13;
+  "--now-color--neutral-17": "28,33,43",&#13;
+  "--now-color--neutral-18": "21,25,32",&#13;
+  "--now-color--neutral-19": "14,17,22",&#13;
+  "--now-color--neutral-20": "7,8,11",&#13;
+  "--now-color--neutral-21": "0,0,0",&#13;
+  "--now-color_text--primary": "--now-color--neutral-18",&#13;
+  "--now-color_text--secondary": "--now-color--neutral-12",&#13;
+  "--now-color_text--tertiary": "--now-color--neutral-9",&#13;
+  "--now-color_background--primary": "--now-color--neutral-0",&#13;
+  "--now-color_background--secondary": "--now-color--neutral-1",&#13;
+  "--now-color_background--tertiary": "--now-color--neutral-2",&#13;
+  "--now-color_border--primary": "--now-color--neutral-7",&#13;
+  "--now-color_border--secondary": "--now-color--neutral-5",&#13;
+  "--now-color_border--tertiary": "--now-color--neutral-3",&#13;
+  "--now-color_divider--primary": "--now-color--neutral-7",&#13;
+  "--now-color_divider--secondary": "--now-color--neutral-5",&#13;
+  "--now-color_divider--tertiary": "--now-color--neutral-3",&#13;
+  "--now-color_focus-ring_shadow": "--now-color--neutral-0",&#13;
+  "--now-datavis_color--primary": "--now-color--neutral-0",&#13;
+  "--now-datavis_color_chart--primary": "--now-color--neutral-2",&#13;
+  "--now-datavis_color_chart--secondary": "--now-color--neutral-4",&#13;
+  "--now-datavis_color_chart--tertiary": "--now-color--neutral-7",&#13;
+  "--now-datavis_color_label--primary": "--now-color--neutral-18",&#13;
+  "--now-datavis_color_label--secondary": "--now-color--neutral-9",&#13;
+  "--now-datavis_color_label--tertiary": "--now-color--neutral-5",&#13;
+  "--now-datavis_color_layer--primary": "--now-color--neutral-2",&#13;
+  "--now-datavis_color_layer--secondary": "--now-color--neutral-4",&#13;
+  "--now-datavis_color_layer--tertiary": "--now-color--neutral-5",&#13;
+  "--now-datavis_color_layer--quad": "--now-color--neutral-20",&#13;
+  "--now-color--primary-NaN": "36,36,60",&#13;
+  "--now-color--secondary-NaN": "24,24,39",&#13;
+  "--now-color_selection--primary-NaN": "128,54,54",&#13;
+  "--now-color_selection--secondary-NaN": "81,36,9",&#13;
+  "--now-color--interactive-NaN": "24,25,57",&#13;
+  "--now-color--link-1": "151,152,198",&#13;
+  "--now-color--link-2": "102,103,171",&#13;
+  "--now-color--link-3": "70,71,118",&#13;
+  "--now-color--link-4": "38,38,63",&#13;
+  "--now-color--focus-1": "148,149,196",&#13;
+  "--now-color--focus-2": "102,103,171",&#13;
+  "--now-color--focus-3": "38,38,63",&#13;
+  "--now-color_focus-ring": "--now-color--focus-2",&#13;
+  "--now-color_surface--brand-1": "255,240,240",&#13;
+  "--now-color_surface--brand-2": "255,214,214",&#13;
+  "--now-color_surface--brand-3": "255,187,187",&#13;
+  "--now-color_surface--brand-4": "255,161,161",&#13;
+  "--now-color_surface--brand-5": "255,134,134",&#13;
+  "--now-color_surface--brand-6": "255,108,108",&#13;
+  "--now-color_surface--neutral-1": "252,252,253",&#13;
+  "--now-color_surface--neutral-2": "242,243,245",&#13;
+  "--now-color_surface--neutral-3": "232,234,237",&#13;
+  "--now-color_surface--neutral-4": "222,224,229",&#13;
+  "--now-color_surface--neutral-5": "212,216,221",&#13;
+  "--now-color_surface--neutral-6": "202,206,213",&#13;
+  "--now-color_surface--divider-1": "242,243,244",&#13;
+  "--now-color_surface--divider-2": "223,225,228",&#13;
+  "--now-color_surface--divider-3": "203,206,211",&#13;
+  "--now-color_surface--divider-4": "184,188,195",&#13;
+  "--now-color_surface--divider-5": "164,170,179",&#13;
+  "--now-color_surface--divider-6": "145,151,162",&#13;
+  "--now-color_chrome--brand-NaN": "24,24,38",&#13;
+  "--now-color_chrome--divider-NaN": "8,8,13",&#13;
+  "--now-color_alert--critical-0": "255,204,210",&#13;
+  "--now-color_alert--critical-1": "255,126,142",&#13;
+  "--now-color_alert--critical-2": "255,51,75",&#13;
+  "--now-color_alert--critical-3": "204,41,60",&#13;
+  "--now-color_alert--critical-4": "153,31,45",&#13;
+  "--now-color_alert--critical-5": "102,20,30",&#13;
+  "--now-color_alert--high-0": "255,229,191",&#13;
+  "--now-color_alert--high-1": "254,189,94",&#13;
+  "--now-color_alert--high-2": "253,151,0",&#13;
+  "--now-color_alert--high-3": "192,115,0",&#13;
+  "--now-color_alert--high-4": "132,79,0",&#13;
+  "--now-color_alert--high-5": "71,42,0",&#13;
+  "--now-color_alert--warning-0": "251,247,191",&#13;
+  "--now-color_alert--warning-1": "246,235,94",&#13;
+  "--now-color_alert--warning-2": "240,224,0",&#13;
+  "--now-color_alert--warning-3": "182,170,0",&#13;
+  "--now-color_alert--warning-4": "125,116,0",&#13;
+  "--now-color_alert--warning-5": "67,63,0",&#13;
+  "--now-color_alert--moderate-0": "225,217,255",&#13;
+  "--now-color_alert--moderate-1": "182,162,255",&#13;
+  "--now-color_alert--moderate-2": "139,107,255",&#13;
+  "--now-color_alert--moderate-3": "106,81,194",&#13;
+  "--now-color_alert--moderate-4": "72,56,133",&#13;
+  "--now-color_alert--moderate-5": "39,30,71",&#13;
+  "--now-color_alert--info-0": "203,233,252",&#13;
+  "--now-color_alert--info-1": "130,201,248",&#13;
+  "--now-color_alert--info-2": "56,170,244",&#13;
+  "--now-color_alert--info-3": "43,129,185",&#13;
+  "--now-color_alert--info-4": "29,88,127",&#13;
+  "--now-color_alert--info-5": "16,48,68",&#13;
+  "--now-color_alert--positive-0": "210,234,189",&#13;
+  "--now-color_alert--positive-1": "145,204,94",&#13;
+  "--now-color_alert--positive-2": "81,174,0",&#13;
+  "--now-color_alert--positive-3": "60,129,0",&#13;
+  "--now-color_alert--positive-4": "38,82,0",&#13;
+  "--now-color_alert--positive-5": "17,37,0",&#13;
+  "--now-color_alert--low-0": "228,228,231",&#13;
+  "--now-color_alert--low-1": "189,190,198",&#13;
+  "--now-color_alert--low-2": "150,152,164",&#13;
+  "--now-color_alert--low-3": "111,112,121",&#13;
+  "--now-color_alert--low-4": "71,71,77",&#13;
+  "--now-color_alert--low-5": "32,32,34",&#13;
+  "--now-color_grouped--blue-0": "217,244,249",&#13;
+  "--now-color_grouped--blue-1": "159,227,239",&#13;
+  "--now-color_grouped--blue-2": "103,210,230",&#13;
+  "--now-color_grouped--blue-3": "80,164,179",&#13;
+  "--now-color_grouped--blue-4": "59,120,131",&#13;
+  "--now-color_grouped--blue-5": "36,74,81",&#13;
+  "--now-color_grouped--brown-0": "244,233,221",&#13;
+  "--now-color_grouped--brown-1": "227,199,168",&#13;
+  "--now-color_grouped--brown-2": "211,166,117",&#13;
+  "--now-color_grouped--brown-3": "165,129,91",&#13;
+  "--now-color_grouped--brown-4": "120,95,67",&#13;
+  "--now-color_grouped--brown-5": "74,58,41",&#13;
+  "--now-color_grouped--gray-0": "232,234,234",&#13;
+  "--now-color_grouped--gray-1": "197,202,203",&#13;
+  "--now-color_grouped--gray-2": "163,171,172",&#13;
+  "--now-color_grouped--gray-3": "127,133,134",&#13;
+  "--now-color_grouped--gray-4": "93,97,98",&#13;
+  "--now-color_grouped--gray-5": "57,60,60",&#13;
+  "--now-color_grouped--green-0": "212,238,216",&#13;
+  "--now-color_grouped--green-1": "145,211,156",&#13;
+  "--now-color_grouped--green-2": "81,185,98",&#13;
+  "--now-color_grouped--green-3": "63,144,76",&#13;
+  "--now-color_grouped--green-4": "46,105,56",&#13;
+  "--now-color_grouped--green-5": "28,65,34",&#13;
+  "--now-color_grouped--green-yellow-0": "241,246,219",&#13;
+  "--now-color_grouped--green-yellow-1": "220,232,164",&#13;
+  "--now-color_grouped--green-yellow-2": "200,218,110",&#13;
+  "--now-color_grouped--green-yellow-3": "156,170,86",&#13;
+  "--now-color_grouped--green-yellow-4": "114,124,63",&#13;
+  "--now-color_grouped--green-yellow-5": "70,76,39",&#13;
+  "--now-color_grouped--magenta-0": "249,218,239",&#13;
+  "--now-color_grouped--magenta-1": "241,161,215",&#13;
+  "--now-color_grouped--magenta-2": "232,105,191",&#13;
+  "--now-color_grouped--magenta-3": "181,82,149",&#13;
+  "--now-color_grouped--magenta-4": "132,60,109",&#13;
+  "--now-color_grouped--magenta-5": "81,37,67",&#13;
+  "--now-color_grouped--orange-0": "255,226,220",&#13;
+  "--now-color_grouped--orange-1": "255,183,166",&#13;
+  "--now-color_grouped--orange-2": "255,140,114",&#13;
+  "--now-color_grouped--orange-3": "199,109,89",&#13;
+  "--now-color_grouped--orange-4": "145,80,65",&#13;
+  "--now-color_grouped--orange-5": "89,49,40",&#13;
+  "--now-color_grouped--pink-0": "247,223,231",&#13;
+  "--now-color_grouped--pink-1": "235,175,195",&#13;
+  "--now-color_grouped--pink-2": "224,128,160",&#13;
+  "--now-color_grouped--pink-3": "175,100,125",&#13;
+  "--now-color_grouped--pink-4": "128,73,91",&#13;
+  "--now-color_grouped--pink-5": "78,45,56",&#13;
+  "--now-color_grouped--purple-0": "239,222,250",&#13;
+  "--now-color_grouped--purple-1": "213,171,242",&#13;
+  "--now-color_grouped--purple-2": "189,122,234",&#13;
+  "--now-color_grouped--purple-3": "147,95,183",&#13;
+  "--now-color_grouped--purple-4": "108,70,133",&#13;
+  "--now-color_grouped--purple-5": "66,43,82",&#13;
+  "--now-color_grouped--teal-0": "212,240,240",&#13;
+  "--now-color_grouped--teal-1": "145,217,217",&#13;
+  "--now-color_grouped--teal-2": "81,194,194",&#13;
+  "--now-color_grouped--teal-3": "63,151,151",&#13;
+  "--now-color_grouped--teal-4": "46,111,111",&#13;
+  "--now-color_grouped--teal-5": "28,68,68",&#13;
+  "--now-color_grouped--yellow-0": "255,241,212",&#13;
+  "--now-color_grouped--yellow-1": "255,219,145",&#13;
+  "--now-color_grouped--yellow-2": "255,198,81",&#13;
+  "--now-color_grouped--yellow-3": "199,154,63",&#13;
+  "--now-color_grouped--yellow-4": "145,113,46",&#13;
+  "--now-color_grouped--yellow-5": "89,69,28"&#13;
+}&#13;
+}</style>
+        <sys_class_name>sys_ux_style</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-06 17:52:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>932338e997c2e59051637d271153af6a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>SW Workspace Theme</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Safety Workplace" source="x_1007530_safety_0">21dae86197c2e59051637d271153af33</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Safety Workplace">21dae86197c2e59051637d271153af33</sys_scope>
+        <sys_update_name>sys_ux_style_932338e997c2e59051637d271153af6a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-07 02:33:36</sys_updated_on>
+        <type>variant</type>
+    </sys_ux_style>
+</record_update>

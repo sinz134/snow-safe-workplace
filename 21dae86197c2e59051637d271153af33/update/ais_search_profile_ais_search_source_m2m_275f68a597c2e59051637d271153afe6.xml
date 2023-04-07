@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_profile_ais_search_source_m2m">
+    <ais_search_profile_ais_search_source_m2m action="INSERT_OR_UPDATE">
+        <profile display_value="Safety Workplace Workspace search profile">915fa4a514c2e5901f26569bc4139b95</profile>
+        <search_source display_value="PPE Request">2b5f68a597c2e59051637d271153afe4</search_source>
+        <sys_class_name>ais_search_profile_ais_search_source_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-06 17:28:48</sys_created_on>
+        <sys_id>275f68a597c2e59051637d271153afe6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Safety Workplace Workspace search profile.PPE Request</sys_name>
+        <sys_package display_value="Safety Workplace" source="x_1007530_safety_0">21dae86197c2e59051637d271153af33</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Safety Workplace">21dae86197c2e59051637d271153af33</sys_scope>
+        <sys_update_name>ais_search_profile_ais_search_source_m2m_275f68a597c2e59051637d271153afe6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-06 17:28:48</sys_updated_on>
+    </ais_search_profile_ais_search_source_m2m>
+</record_update>
