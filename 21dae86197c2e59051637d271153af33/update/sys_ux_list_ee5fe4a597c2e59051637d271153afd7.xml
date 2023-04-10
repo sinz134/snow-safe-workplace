@@ -2,12 +2,12 @@
     <sys_ux_list action="INSERT_OR_UPDATE">
         <active>true</active>
         <category display_value="Workplace Request">ea5fe4a597c2e59051637d271153afbb</category>
-        <columns>number,short_description,requested_for,workplace_location,assignment_group,assigned_to,type,state</columns>
-        <condition table="sn_wsd_core_workplace_request">active=false^EQ<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="false"/>
+        <columns>number,short_description,requested_for,assigned_to,priority,state</columns>
+        <condition table="sn_wsd_core_workplace_request">stateIN3,4,7^EQ<item display_value="3,4,7" endquery="false" field="state" goto="false" newquery="false" operator="IN" or="false" value="3,4,7"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </condition>
         <configuration display_value="Safety Workplace Workspace_menu_config">665fe4a597c2e59051637d271153afb1</configuration>
-        <group_by_column/>
+        <group_by_column>state</group_by_column>
         <groups/>
         <hide_cell_filter>false</hide_cell_filter>
         <hide_checkbox_hover>true</hide_checkbox_hover>
@@ -62,15 +62,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ee5fe4a597c2e59051637d271153afd7</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Closed</sys_name>
         <sys_overrides/>
-        <sys_package display_value="Safety Workplace" source="x_1007530_safety_0">21dae86197c2e59051637d271153af33</sys_package>
+        <sys_package display_value="Safe Workplace" source="x_1007530_safety_0">21dae86197c2e59051637d271153af33</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Safety Workplace">21dae86197c2e59051637d271153af33</sys_scope>
+        <sys_scope display_value="Safe Workplace">21dae86197c2e59051637d271153af33</sys_scope>
         <sys_update_name>sys_ux_list_ee5fe4a597c2e59051637d271153afd7</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-06 17:28:43</sys_updated_on>
+        <sys_updated_on>2023-04-08 06:48:40</sys_updated_on>
         <table>sn_wsd_core_workplace_request</table>
         <title>Closed</title>
         <view/>
