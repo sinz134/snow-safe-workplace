@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="INSERT_OR_UPDATE">
+        <choices/>
+        <description/>
+        <name>featureRoutes</name>
+        <page display_value="Safe Workplace Workspace">955fa4a53ec2e590f555b0c56df2fc8f</page>
+        <required_translations>[ ]</required_translations>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-11 17:34:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>e850aa07970e6d9051637d271153afed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>featureRoutes</sys_name>
+        <sys_package display_value="Safe Workplace" source="x_1007530_safety_0">21dae86197c2e59051637d271153af33</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Safe Workplace">21dae86197c2e59051637d271153af33</sys_scope>
+        <sys_update_name>sys_ux_page_property_e850aa07970e6d9051637d271153afed</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-11 17:34:11</sys_updated_on>
+        <type>json</type>
+        <unique_name>x_1007530_safety_0.955fa4a53ec2e590f555b0c56df2fc8f.root.featureRoutes</unique_name>
+        <value>{"record":{"_default":{"routeInfo":{"route":"record","fields":[{"name":"table","mapping":{"address":"table"}},{"name":"sysId","mapping":{"address":"sysId"}}],"params":[{"name":"query","mapping":{"address":"query"}},{"name":"extraParams","mapping":{"address":"extraParams"}},{"name":"views","mapping":{"address":"views"}},{"name":"selectedTabIndex","mapping":{"address":"selectedTabIndex"}}]}}},"list":{"_default":{"routeInfo":{"route":"list","fields":[],"params":[{"name":"listId","mapping":{"address":"listId"}},{"name":"configId","mapping":{"address":"configId"}},{"name":"tinyId","mapping":{"address":"tinyId"}}]}}},"inbox":{"_default":{"type":"'VIEWPORT'","routeInfo":{"route":"inbox"},"viewportInfo":{"route":"inbox-sidebar","fields":[{"name":"opened","mapping":{"address":"opened"}}],"params":[{"name":"maxTabLimit","mapping":{"address":"maxTabLimit"}},{"name":"activeRecords","mapping":{"address":"activeRecords"}}]}}}}</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="delete_multiple" query="documentkey=e850aa07970e6d9051637d271153afed"/>
+</record_update>

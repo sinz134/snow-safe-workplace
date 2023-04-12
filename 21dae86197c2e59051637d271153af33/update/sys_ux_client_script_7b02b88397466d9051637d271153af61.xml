@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes>b4e74225c3742010de10a0f89d40dd9c</includes>
+        <macroponent display_value="Agent Chat Shell">1ce0b80397466d9051637d271153af69</macroponent>
+        <name>handleNewChatMessageReceived</name>
+        <preset/>
+        <required_translations/>
+        <script><![CDATA[/**
+ * handleNewChatMessageReceived ux client script handler to emit the SCREEN_STATUS_CHANGED
+ *  event. The payload includes the interaction page screenKey and indicator to represent
+ *  the live update.
+ *
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ *
+ */
+function handler({api, event, helpers, imports}) {
+    /** active tab sysId **/
+    const activeParentId = api.context.props.activeParentId;
+
+    /** interaction sysId from the payload **/
+    const sysId = event.payload.interaction.sys_id;
+
+    /** interaction status from the payload **/
+    const status = event.payload.status;
+
+    /** generated screenKey for the interaction page in context **/
+    const { getInteractionPageScreenKey } = imports["sn_omnich_interact.interactionUtils"]();
+
+    /** Send the screen_status_changed event from the chat shell for hidden chat instances **/
+    if (activeParentId !== sysId && status === 'new activity') {
+        const screenKey = getInteractionPageScreenKey(sysId);
+        console.log('==== ScreenKey ====', screenKey);
+        api.emit('SCREEN_STATUS_CHANGED', {screenKey, hasUpdate: true});
+    }
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-11 09:32:03</sys_created_on>
+        <sys_id>7b02b88397466d9051637d271153af61</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>handleNewChatMessageReceived</sys_name>
+        <sys_package display_value="Safe Workplace" source="x_1007530_safety_0">21dae86197c2e59051637d271153af33</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Safe Workplace">21dae86197c2e59051637d271153af33</sys_scope>
+        <sys_update_name>sys_ux_client_script_7b02b88397466d9051637d271153af61</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-11 09:32:03</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

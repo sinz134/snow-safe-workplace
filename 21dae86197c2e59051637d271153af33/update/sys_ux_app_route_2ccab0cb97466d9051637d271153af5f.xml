@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="INSERT_OR_UPDATE">
+        <app_config display_value="Safety Workplace Workspace Config">995fa4a5e5c2e590dae8aef910279a95</app_config>
+        <description/>
+        <extension_point/>
+        <fields>opened</fields>
+        <icon/>
+        <name>Ongoing</name>
+        <optional_parameters/>
+        <order>0</order>
+        <parent_macroponent display_value="Agent Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent>
+        <parent_macroponent_composition_element_id>wsOngoingSidebar</parent_macroponent_composition_element_id>
+        <route_type>ongoing-sidebar</route_type>
+        <screen_type display_value="Ongoing">87aa74cb97466d9051637d271153afa7</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-11 10:10:07</sys_created_on>
+        <sys_id>2ccab0cb97466d9051637d271153af5f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Ongoing</sys_name>
+        <sys_package display_value="Safe Workplace" source="x_1007530_safety_0">21dae86197c2e59051637d271153af33</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Safe Workplace">21dae86197c2e59051637d271153af33</sys_scope>
+        <sys_update_name>sys_ux_app_route_2ccab0cb97466d9051637d271153af5f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-11 10:10:07</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_translated_text action="delete_multiple" query="documentkey=2ccab0cb97466d9051637d271153af5f"/>
+</record_update>
