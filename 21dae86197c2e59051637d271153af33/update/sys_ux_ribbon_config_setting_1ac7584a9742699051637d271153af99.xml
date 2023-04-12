@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_ribbon_config_setting">
+    <sys_ux_ribbon_config_setting action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <configuration display_value="Safety Workplace Workspace Ribbon Config">555fa4a517c2e59000f831c298676f8e</configuration>
+        <order>100</order>
+        <ribbon display_value="Travel Requester">2d179c0a9742699051637d271153af93</ribbon>
+        <specificity>20</specificity>
+        <sys_class_name>sys_ux_ribbon_config_setting</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-08 05:03:09</sys_created_on>
+        <sys_id>1ac7584a9742699051637d271153af99</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Safe Workplace" source="x_1007530_safety_0">21dae86197c2e59051637d271153af33</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Safe Workplace">21dae86197c2e59051637d271153af33</sys_scope>
+        <sys_update_name>sys_ux_ribbon_config_setting_1ac7584a9742699051637d271153af99</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-08 05:03:09</sys_updated_on>
+        <table>sn_imt_travel_request</table>
+        <width>6</width>
+    </sys_ux_ribbon_config_setting>
+</record_update>

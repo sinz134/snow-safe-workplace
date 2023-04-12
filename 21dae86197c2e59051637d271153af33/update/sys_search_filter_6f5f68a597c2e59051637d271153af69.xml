@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_search_filter">
+    <sys_search_filter action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <ais_search_source display_value="Request For Entry">6f5f68a597c2e59051637d271153af64</ais_search_source>
+        <label>Request For Entry</label>
+        <name>Request For Entry</name>
+        <order>400</order>
+        <search_context_config display_value="Safety Workplace Workspace AI Search Configuration">d55fa4a513c2e590f4db0e9de9e67a90</search_context_config>
+        <sys_class_name>sys_search_filter</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-06 17:28:47</sys_created_on>
+        <sys_id>6f5f68a597c2e59051637d271153af69</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Request For Entry</sys_name>
+        <sys_package display_value="Safety Workplace" source="x_1007530_safety_0">21dae86197c2e59051637d271153af33</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Safety Workplace">21dae86197c2e59051637d271153af33</sys_scope>
+        <sys_update_name>sys_search_filter_6f5f68a597c2e59051637d271153af69</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-06 17:28:47</sys_updated_on>
+    </sys_search_filter>
+</record_update>
