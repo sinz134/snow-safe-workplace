@@ -1,0 +1,1839 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="INSERT_OR_UPDATE">
+        <applicability/>
+        <applicability_mode>query</applicability_mode>
+        <autopilot_topic>true</autopilot_topic>
+        <category>b6f5b8db9746ad9051637d271153af7f</category>
+        <channels/>
+        <connect_queue/>
+        <description/>
+        <expose_on_palette>false</expose_on_palette>
+        <flexible_conversation_switching>false</flexible_conversation_switching>
+        <graph>{
+  "graph_api_version": "1.0.41",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "7e21f112170e4f3e8cf3cd29c61b5aa0": {
+          "id": "7e21f112170e4f3e8cf3cd29c61b5aa0",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Let Maru help you!"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          }
+        },
+        "7d36c9dc41804479b90c4a05b25fd7b7": {
+          "id": "7d36c9dc41804479b90c4a05b25fd7b7",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Maru feels so happy to support you &lt;3"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Bye "
+                  },
+                  {
+                    "type": "datapill",
+                    "dataPill": {
+                      "value": "{{vaInputs.user.first_name}}",
+                      "displayValue": "Input Variables➛User➛First name"
+                    },
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ]
+                  },
+                  {
+                    "text": "!"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          }
+        },
+        "a3e5cb625fb64272a5e18a59b88db28d": {
+          "id": "a3e5cb625fb64272a5e18a59b88db28d",
+          "stepType": "TableOutput",
+          "name": "View Reservation list",
+          "header": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": ""
+                  },
+                  {
+                    "type": "datapill",
+                    "dataPill": {
+                      "value": "{{vaInputs.user.first_name}}",
+                      "displayValue": "Input Variables➛User➛First name"
+                    },
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ]
+                  },
+                  {
+                    "text": "'s Reservations"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "displayColumnHeaders": true,
+          "dataSourceType": "table",
+          "script": "",
+          "tableName": "sn_wsd_core_reservation",
+          "sortByColumns": [],
+          "tableCondition": {
+            "mode": "glide_query",
+            "value": "requested_for={{vaInputs.user}}^start&gt;={{vaInputs.start_range}}^end&lt;={{vaInputs.end_range}}"
+          },
+          "columns": [
+            {
+              "key": "number",
+              "value": "Number",
+              "label": "Number"
+            },
+            {
+              "key": "location",
+              "value": "Location",
+              "label": "Location"
+            },
+            {
+              "key": "start",
+              "value": "Start",
+              "label": "Start"
+            },
+            {
+              "key": "state",
+              "value": "State",
+              "label": "State"
+            }
+          ],
+          "noRecordsResponseMsg": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "You don't have any reservations."
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "ee31c73fbed24c43b7a1c697e282725e": {
+          "id": "ee31c73fbed24c43b7a1c697e282725e",
+          "stepType": "TextOutput",
+          "name": "Noti",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Give Maru some information "
+                    },
+                    {
+                      "type": "emoji",
+                      "emoji": {
+                        "id": "hugging_face",
+                        "name": "Hugging Face",
+                        "short_names": [
+                          "hugging_face"
+                        ],
+                        "colons": ":hugging_face:",
+                        "emoticons": [],
+                        "unified": "1f917",
+                        "skin": null,
+                        "native": "🤗"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": " "
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "3dbb9ec6c42f4f1ea6599fe2d2fcab28"
+            }
+          ],
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "fcf34b5c443441429bfa8505efe18d41": {
+          "id": "fcf34b5c443441429bfa8505efe18d41",
+          "stepType": "Prompt",
+          "name": "Start range",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "You want to view all reseravtions between:"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "47d304dc580c42cba90f2350e00be1b5"
+        },
+        "b6add2e92abf45e89dfd6f1d3b556090": {
+          "id": "b6add2e92abf45e89dfd6f1d3b556090",
+          "stepType": "Prompt",
+          "name": "End range",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "and:"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "5fe4415fa4b24bd993cd830f197e851d"
+        },
+        "326858f4797d462999a067c229d7543a": {
+          "id": "326858f4797d462999a067c229d7543a",
+          "stepType": "Prompt",
+          "name": "State",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Do you want to view reservations with only Confirmed state? "
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "2db90b4e922b475081f41c275727b017"
+        },
+        "3eba42f608484464b82fec349c3c935f": {
+          "id": "3eba42f608484464b82fec349c3c935f",
+          "stepType": "Decision",
+          "name": "State"
+        },
+        "336f0b17a02c49a18749a5a2acec1368": {
+          "id": "336f0b17a02c49a18749a5a2acec1368",
+          "stepType": "TextOutput",
+          "name": "Noti",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Let Maru find for you all reservations between "
+                    },
+                    {
+                      "type": "datapill",
+                      "dataPill": {
+                        "value": "{{vaInputs.start_range}}",
+                        "displayValue": "Input Variables➛Start Range"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": " and "
+                    },
+                    {
+                      "type": "datapill",
+                      "dataPill": {
+                        "value": "{{vaInputs.end_range}}",
+                        "displayValue": "Input Variables➛End Range"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": "  "
+                    },
+                    {
+                      "type": "emoji",
+                      "emoji": {
+                        "id": "smiling_face_with_3_hearts",
+                        "name": "Smiling Face with Smiling Eyes and Three Hearts",
+                        "short_names": [
+                          "smiling_face_with_3_hearts"
+                        ],
+                        "colons": ":smiling_face_with_3_hearts:",
+                        "emoticons": [],
+                        "unified": "1f970",
+                        "skin": null,
+                        "native": "🥰"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": " "
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "701f7146eefe47ba9eb45c21791a6eeb"
+            }
+          ],
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "361c722a82d6429bbfa5d928b26cd84e": {
+          "id": "361c722a82d6429bbfa5d928b26cd84e",
+          "stepType": "TextOutput",
+          "name": "Noti",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Let Maru find for you all reservations between "
+                    },
+                    {
+                      "type": "datapill",
+                      "dataPill": {
+                        "value": "{{vaInputs.start_range}}",
+                        "displayValue": "Input Variables➛Start Range"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": "       and  "
+                    },
+                    {
+                      "type": "datapill",
+                      "dataPill": {
+                        "value": "{{vaInputs.end_range}}",
+                        "displayValue": "Input Variables➛End Range"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": " with the state is Confirmed "
+                    },
+                    {
+                      "type": "emoji",
+                      "emoji": {
+                        "id": "star-struck",
+                        "name": "Grinning Face with Star Eyes",
+                        "short_names": [
+                          "star-struck",
+                          "grinning_face_with_star_eyes"
+                        ],
+                        "colons": ":star-struck:",
+                        "emoticons": [],
+                        "unified": "1f929",
+                        "skin": null,
+                        "native": "🤩"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": " "
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "a8d9ff9b53344af687163df72c0aacbb"
+            }
+          ],
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "0dcbc8771f0f43d39d353cdb19c68ec1": {
+          "id": "0dcbc8771f0f43d39d353cdb19c68ec1",
+          "stepType": "TableOutput",
+          "name": "View Reservation list",
+          "header": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": ""
+                  },
+                  {
+                    "type": "datapill",
+                    "dataPill": {
+                      "value": "{{vaInputs.user.first_name}}",
+                      "displayValue": "Input Variables➛User➛First name"
+                    },
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ]
+                  },
+                  {
+                    "text": "'s Reservations"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "displayColumnHeaders": true,
+          "dataSourceType": "table",
+          "script": "",
+          "tableName": "sn_wsd_core_reservation",
+          "sortByColumns": [],
+          "tableCondition": {
+            "mode": "glide_query",
+            "value": "requested_for={{vaInputs.user}}^start&gt;={{vaInputs.start_range}}^end&lt;={{vaInputs.end_range}}^state=confirmed"
+          },
+          "columns": [
+            {
+              "key": "number",
+              "value": "Number",
+              "label": "Number"
+            },
+            {
+              "key": "location",
+              "value": "Location",
+              "label": "Location"
+            },
+            {
+              "key": "start",
+              "value": "Start",
+              "label": "Start"
+            },
+            {
+              "key": "state",
+              "value": "State",
+              "label": "State"
+            }
+          ],
+          "noRecordsResponseMsg": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "You don't have any reservations."
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "5bf576c9185a43ba8f3f57a814d27a2f": {
+          "stepType": "ChoicePrompt",
+          "name": "Other Actions",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "What else can Maru help you?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "0ab823f1c1b34530b12580359b113f50",
+          "id": "5bf576c9185a43ba8f3f57a814d27a2f",
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false
+        },
+        "129dbbe2fa5c436c82feafada3454e04": {
+          "id": "129dbbe2fa5c436c82feafada3454e04",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "ef2453e6352c4f2aafc6192ea1c4d7b2": {
+          "id": "ef2453e6352c4f2aafc6192ea1c4d7b2",
+          "stepType": "Prompt",
+          "name": "Detail number",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Please give Maru Number of the reservation:"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "6f1dfb7007c448dba22ebb2968cec9d0",
+          "inputType": {
+            "format": "Text",
+            "script": ""
+          }
+        },
+        "a52a6cd7f1584146886df4d87a9823e3": {
+          "id": "a52a6cd7f1584146886df4d87a9823e3",
+          "stepType": "RecordOutput",
+          "name": "Detail Record",
+          "variableId": "",
+          "cardTemplate": "General",
+          "cardFields": {},
+          "mode": "script",
+          "tableName": "sn_wsd_core_reservation",
+          "fields": [
+            "number",
+            "location",
+            "start",
+            "end",
+            "state"
+          ],
+          "cardDefinition": {
+            "name": "Record",
+            "value": "General"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "condition": {
+            "mode": "glide_query",
+            "value": "number={{vaInputs.detail_number}}^requested_for={{vaInputs.user}}"
+          }
+        },
+        "e02a3334b60f4fab83b52964ae4be7a4": {
+          "id": "e02a3334b60f4fab83b52964ae4be7a4",
+          "stepType": "LookupRecord",
+          "name": "Find detail record",
+          "condition": {
+            "mode": "glide_query",
+            "value": "number={{vaInputs.detail_number}}^requested_for={{vaInputs.user}}"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "variableId": "68417382b69545bdbd0a3940a84fb053"
+        },
+        "9636de8c5f9a416c96462ee92c40ea15": {
+          "id": "9636de8c5f9a416c96462ee92c40ea15",
+          "stepType": "Decision",
+          "name": "Find record"
+        },
+        "649ad65c8e56454db47a17b76c56d0fc": {
+          "id": "649ad65c8e56454db47a17b76c56d0fc",
+          "stepType": "TextOutput",
+          "name": "noti",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Sorry Maru couldn't find any record matching your Number "
+                    },
+                    {
+                      "type": "emoji",
+                      "emoji": {
+                        "id": "pleading_face",
+                        "name": "Face with Pleading Eyes",
+                        "short_names": [
+                          "pleading_face"
+                        ],
+                        "colons": ":pleading_face:",
+                        "emoticons": [],
+                        "unified": "1f97a",
+                        "skin": null,
+                        "native": "🥺"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": " "
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "d6a4671d31ba4e0c9df7d122a7e8a2b8"
+            }
+          ],
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "e6d60560907f4832bba91fa2ff5e0a00": {
+          "id": "e6d60560907f4832bba91fa2ff5e0a00",
+          "stepType": "Prompt",
+          "name": "Update number",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Please give Maru Number of reservation that you want to update:"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "17286912c58b4281a7d56c6ea0a62756",
+          "inputType": {
+            "format": "Text",
+            "script": ""
+          }
+        },
+        "8a407550b9704bfc8cbb069e425f672d": {
+          "id": "8a407550b9704bfc8cbb069e425f672d",
+          "stepType": "LookupRecord",
+          "name": "Find update record",
+          "condition": {
+            "mode": "glide_query",
+            "value": "number={{vaInputs.update_number}}^requested_for={{vaInputs.user}}"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "variableId": "bf549cc9a5b140b495051ad7cc44c85d"
+        },
+        "ba1c64da99d742289a6895a132d53aa8": {
+          "id": "ba1c64da99d742289a6895a132d53aa8",
+          "stepType": "Decision",
+          "name": "Find record"
+        },
+        "1a810893997441c28612568cde40caba": {
+          "id": "1a810893997441c28612568cde40caba",
+          "stepType": "TextOutput",
+          "name": "Noti",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Sorry Maru couldn't find any record matching your Number "
+                    },
+                    {
+                      "type": "emoji",
+                      "emoji": {
+                        "id": "pleading_face",
+                        "name": "Face with Pleading Eyes",
+                        "short_names": [
+                          "pleading_face"
+                        ],
+                        "colons": ":pleading_face:",
+                        "emoticons": [],
+                        "unified": "1f97a",
+                        "skin": null,
+                        "native": "🥺"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": " "
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "d895cd2d0cb04b128c48e1d4968dbfe5"
+            }
+          ],
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "c20ee6ddab264839b1e6bbb06c705e4b": {
+          "id": "c20ee6ddab264839b1e6bbb06c705e4b",
+          "stepType": "Prompt",
+          "name": "New Start",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "New Start time:"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "vaInputs.toggle_new_start=true",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "b5b267ed06ec4efab9414f3ebc28af4f"
+        },
+        "1178d3f8fa9f48c1b9b52a50884fd6f5": {
+          "id": "1178d3f8fa9f48c1b9b52a50884fd6f5",
+          "stepType": "Prompt",
+          "name": "toggle new start",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Do you want to update Start time?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "9b771f24cb9644b7a7b228dd6db6a3a7"
+        },
+        "96f7e75f78dc488bbd078749fd47e079": {
+          "id": "96f7e75f78dc488bbd078749fd47e079",
+          "stepType": "Prompt",
+          "name": "Toggle New End",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Do you want to update End time?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "b8f37d0de49f4f4abf7b3d6464478628"
+        },
+        "621c86a6e9c84753b1108f590dddcc61": {
+          "id": "621c86a6e9c84753b1108f590dddcc61",
+          "stepType": "Prompt",
+          "name": "New End",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "New End time:"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "51dd8a0bf01848528a715779d232d3bb"
+        },
+        "84677e9e35264242894aef089b530003": {
+          "id": "84677e9e35264242894aef089b530003",
+          "stepType": "CrudAction",
+          "name": "Update end time",
+          "template": "end={{vaInputs.new_end}}",
+          "mode": "update",
+          "record": "bf549cc9a5b140b495051ad7cc44c85d",
+          "applicability": {
+            "value": "vaInputs.toggle_new_end=true",
+            "mode": "query"
+          },
+          "variableId": "29661d8eb56b4b90b0286cae6b6325ab"
+        },
+        "0478062a864640cf8996dcb0962dc656": {
+          "id": "0478062a864640cf8996dcb0962dc656",
+          "stepType": "CrudAction",
+          "name": "Update Start time",
+          "template": "start={{vaInputs.new_start}}",
+          "mode": "update",
+          "record": "bf549cc9a5b140b495051ad7cc44c85d",
+          "applicability": {
+            "value": "vaInputs.toggle_new_start=true",
+            "mode": "query"
+          },
+          "variableId": "77c1d97d9437401d9c3041d7fa29a1e3"
+        },
+        "f0a7fb5f72ab4f87a41ba3dc0babc875": {
+          "id": "f0a7fb5f72ab4f87a41ba3dc0babc875",
+          "stepType": "TextOutput",
+          "name": "Noti",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "To update other fields, you should contact with our Agents "
+                    },
+                    {
+                      "type": "emoji",
+                      "emoji": {
+                        "id": "grinning",
+                        "name": "Grinning Face",
+                        "short_names": [
+                          "grinning"
+                        ],
+                        "colons": ":grinning:",
+                        "emoticons": [],
+                        "unified": "1f600",
+                        "skin": null,
+                        "native": "😀"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": " "
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "e458a8f85244419e811853069f5f40c1"
+            }
+          ],
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "dfea990d7f1b4539958ec87352e35391": {
+          "id": "dfea990d7f1b4539958ec87352e35391",
+          "stepType": "Prompt",
+          "name": "transfer to agent",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Do you want to chat with our Agent?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "bc00c4655d9a4c30a15af665d8c0ae74"
+        },
+        "81d3d07d869d4061b8dedc9c3090c8a4": {
+          "id": "81d3d07d869d4061b8dedc9c3090c8a4",
+          "stepType": "TextOutput",
+          "name": "Noti",
+          "secure": false,
+          "value": [
+            {
+              "value": "(function execute() {\n    /* Return a quoted string.  For example:\n\n       if (vaInputs.first_name == 'Bill') {\n           return gs.getMessageLang(\"hi there {0}\", vaContext.getRequesterLang(), [vaInputs.first_name]);\n       } else {\n           return gs.getMessageLang(\"how are you {0}\", vaContext.getRequesterLang(), [vaInputs.last_name]);\n       }\n    */\n    if (vaSystem.isLiveAgentAvailable()){\n          \n          return 'Maru found an agent for you!';\n      } else {\n          return 'Sorry Maru found no agents available now.';\n      }\n})()\n",
+              "mode": "script"
+            }
+          ],
+          "applicability": {
+            "value": "vaInputs.transfer_to_agent=true",
+            "mode": "query"
+          }
+        },
+        "14eed32d058b4339a48128711d7da4ed": {
+          "id": "14eed32d058b4339a48128711d7da4ed",
+          "stepType": "RecordOutput",
+          "name": "updated record",
+          "variableId": "bf549cc9a5b140b495051ad7cc44c85d",
+          "cardTemplate": "General",
+          "cardFields": {},
+          "mode": "variable",
+          "tableName": "sn_wsd_core_reservation",
+          "fields": [
+            "number",
+            "location",
+            "start",
+            "end",
+            "state"
+          ],
+          "cardDefinition": {
+            "name": "Record",
+            "value": "General"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "condition": {
+            "mode": "glide_query",
+            "value": ""
+          }
+        },
+        "234e8ab35ea6462d92df4fd31b59788b": {
+          "id": "234e8ab35ea6462d92df4fd31b59788b",
+          "stepType": "TextOutput",
+          "name": "noti",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    },
+                    {
+                      "type": "datapill",
+                      "dataPill": {
+                        "value": "{{vaInputs.update_number}}",
+                        "displayValue": "Input Variables➛Update Number"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": "'s detail:"
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "fac6f02d3b0546c18c7917cf6068f522"
+            }
+          ],
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "5abe71f6e7fd4608a63e4381bae2fbeb": {
+          "id": "5abe71f6e7fd4608a63e4381bae2fbeb",
+          "name": "transfer to agent",
+          "script": "(function execute() {\n    /* Code your scripted action here. For example, you might update a\n       record based on conditional logic:\n\n        if (vaVars.my_flag == 'say hello') {\n            gs.info('hi there');\n        } else {\n            gs.info('bye now');\n        }\n    */\n     if (vaSystem.isLiveAgentAvailable()){\n          vaSystem.connectToAgent();\n          return true;\n      } else {\n          return false;\n      }\n})()\n",
+          "stepType": "ScriptAction",
+          "applicability": {
+            "value": "vaInputs.transfer_to_agent=true",
+            "mode": "query"
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "702c7d5be7d94885bfd351da7908772f",
+          "edgeType": "Edge",
+          "source": "a52a6cd7f1584146886df4d87a9823e3",
+          "target": "5bf576c9185a43ba8f3f57a814d27a2f",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "70ad0bc8eb284d0f8ce804816bc5342d",
+          "edgeType": "Edge",
+          "source": "a3e5cb625fb64272a5e18a59b88db28d",
+          "target": "5bf576c9185a43ba8f3f57a814d27a2f",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "cdae3386dc514d89ae0e883de9532a82",
+          "edgeType": "Edge",
+          "source": "326858f4797d462999a067c229d7543a",
+          "target": "3eba42f608484464b82fec349c3c935f",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "43a244c1d93b42289f6f71e628cb317b",
+          "edgeType": "Edge",
+          "source": "7e21f112170e4f3e8cf3cd29c61b5aa0",
+          "target": "ee31c73fbed24c43b7a1c697e282725e",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "710aa83738924ab092348cf023c96862",
+          "edgeType": "Edge",
+          "source": "ee31c73fbed24c43b7a1c697e282725e",
+          "target": "fcf34b5c443441429bfa8505efe18d41",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "4e4494f6400a479d9e1d3ce2ea33c802",
+          "edgeType": "Edge",
+          "source": "fcf34b5c443441429bfa8505efe18d41",
+          "target": "b6add2e92abf45e89dfd6f1d3b556090",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "182eddf1b5c140f4ac4929dc781ae79b",
+          "edgeType": "Edge",
+          "source": "b6add2e92abf45e89dfd6f1d3b556090",
+          "target": "326858f4797d462999a067c229d7543a",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "2f2dfe7a393e40faa764c512a3a8345a",
+          "edgeType": "Branch",
+          "source": "3eba42f608484464b82fec349c3c935f",
+          "target": "336f0b17a02c49a18749a5a2acec1368",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.state=",
+            "mode": "query"
+          },
+          "label": "All"
+        },
+        {
+          "id": "968829951a0445bf82a321dee03a94ba",
+          "edgeType": "Edge",
+          "source": "336f0b17a02c49a18749a5a2acec1368",
+          "target": "a3e5cb625fb64272a5e18a59b88db28d",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "bae9c6765fd84a98b75a0a7835e88ca3",
+          "edgeType": "Branch",
+          "source": "3eba42f608484464b82fec349c3c935f",
+          "target": "361c722a82d6429bbfa5d928b26cd84e",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.state=true",
+            "mode": "query"
+          },
+          "label": "Confirmed"
+        },
+        {
+          "id": "848f1acb324d4564a0d27bbf211181e6",
+          "edgeType": "Edge",
+          "source": "361c722a82d6429bbfa5d928b26cd84e",
+          "target": "0dcbc8771f0f43d39d353cdb19c68ec1",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "560d6709f4db4e9ab9ac8788c726c8ca",
+          "edgeType": "Edge",
+          "source": "0dcbc8771f0f43d39d353cdb19c68ec1",
+          "target": "5bf576c9185a43ba8f3f57a814d27a2f",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "c8954767058e4c4daa40a6fe1d6d2b81",
+          "edgeType": "Edge",
+          "source": "5bf576c9185a43ba8f3f57a814d27a2f",
+          "target": "129dbbe2fa5c436c82feafada3454e04",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "cbef2b463c384564a538649366497526",
+          "edgeType": "Branch",
+          "source": "129dbbe2fa5c436c82feafada3454e04",
+          "target": "ef2453e6352c4f2aafc6192ea1c4d7b2",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.other_actions=View detail of a reservation",
+            "mode": "query"
+          },
+          "label": "View Detail"
+        },
+        {
+          "id": "bf94a91448f848828359554be40d0018",
+          "edgeType": "Edge",
+          "source": "ef2453e6352c4f2aafc6192ea1c4d7b2",
+          "target": "e02a3334b60f4fab83b52964ae4be7a4",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "6d61343866f141caa0aaaa2bb163510b",
+          "edgeType": "Edge",
+          "source": "e02a3334b60f4fab83b52964ae4be7a4",
+          "target": "9636de8c5f9a416c96462ee92c40ea15",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "ac9e5cefa6d146a9a1b7d4028095d82d",
+          "edgeType": "Branch",
+          "source": "9636de8c5f9a416c96462ee92c40ea15",
+          "target": "a52a6cd7f1584146886df4d87a9823e3",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.find_detail_recordISNOTEMPTY",
+            "mode": "query"
+          },
+          "label": "Yes"
+        },
+        {
+          "id": "0c495dfe08224b7e97fb24ac95915726",
+          "edgeType": "Branch",
+          "source": "9636de8c5f9a416c96462ee92c40ea15",
+          "target": "649ad65c8e56454db47a17b76c56d0fc",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.find_detail_recordISEMPTY",
+            "mode": "query"
+          },
+          "label": "No"
+        },
+        {
+          "id": "68dea7feac564c269417c69b5cacd350",
+          "edgeType": "Edge",
+          "source": "649ad65c8e56454db47a17b76c56d0fc",
+          "target": "5bf576c9185a43ba8f3f57a814d27a2f",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "cbde0b0f7a26465d894b181f188e4802",
+          "edgeType": "Branch",
+          "source": "129dbbe2fa5c436c82feafada3454e04",
+          "target": "7d36c9dc41804479b90c4a05b25fd7b7",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.other_actions=Nothing",
+            "mode": "query"
+          },
+          "label": "Nothing"
+        },
+        {
+          "id": "97cee217a8434bfea2c8156dd4055072",
+          "edgeType": "Branch",
+          "source": "129dbbe2fa5c436c82feafada3454e04",
+          "target": "ee31c73fbed24c43b7a1c697e282725e",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.other_actions=View other reservation list",
+            "mode": "query"
+          },
+          "label": "Other"
+        },
+        {
+          "id": "5e26ec973776412d97927b2d4be2d903",
+          "edgeType": "Branch",
+          "source": "129dbbe2fa5c436c82feafada3454e04",
+          "target": "e6d60560907f4832bba91fa2ff5e0a00",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.other_actions=Update a reservation",
+            "mode": "query"
+          },
+          "label": "Update"
+        },
+        {
+          "id": "486f6bab55974eb484846fdc4e90384f",
+          "edgeType": "Edge",
+          "source": "e6d60560907f4832bba91fa2ff5e0a00",
+          "target": "8a407550b9704bfc8cbb069e425f672d",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "e8196edefcdc4418bc03687d8adae9a0",
+          "edgeType": "Edge",
+          "source": "8a407550b9704bfc8cbb069e425f672d",
+          "target": "ba1c64da99d742289a6895a132d53aa8",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "e62187374d1f42afa77389b02bb30fdf",
+          "edgeType": "Branch",
+          "source": "ba1c64da99d742289a6895a132d53aa8",
+          "target": "1a810893997441c28612568cde40caba",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.find_update_recordISEMPTY",
+            "mode": "query"
+          },
+          "label": "No"
+        },
+        {
+          "id": "0edc7c92543f44fa82ee3071e2521b18",
+          "edgeType": "Edge",
+          "source": "1a810893997441c28612568cde40caba",
+          "target": "5bf576c9185a43ba8f3f57a814d27a2f",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "44d7c14bc1ba48ff878340de7660fbf2",
+          "edgeType": "Branch",
+          "source": "ba1c64da99d742289a6895a132d53aa8",
+          "target": "1178d3f8fa9f48c1b9b52a50884fd6f5",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.find_update_recordISNOTEMPTY",
+            "mode": "query"
+          },
+          "label": "Yes"
+        },
+        {
+          "id": "2bec18005e1a44b2bd45d049326de4eb",
+          "edgeType": "Edge",
+          "source": "1178d3f8fa9f48c1b9b52a50884fd6f5",
+          "target": "c20ee6ddab264839b1e6bbb06c705e4b",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "408681b05cf248feb2f819964fcadb19",
+          "edgeType": "Edge",
+          "source": "c20ee6ddab264839b1e6bbb06c705e4b",
+          "target": "96f7e75f78dc488bbd078749fd47e079",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "67829f9a5ff1432598abe6a8e3470789",
+          "edgeType": "Edge",
+          "source": "96f7e75f78dc488bbd078749fd47e079",
+          "target": "621c86a6e9c84753b1108f590dddcc61",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "cc6cb67182c342c4af5a23335cb6a713",
+          "edgeType": "Edge",
+          "source": "621c86a6e9c84753b1108f590dddcc61",
+          "target": "84677e9e35264242894aef089b530003",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "1e9a6ede884c41d4b9b2d1678a61834a",
+          "edgeType": "Edge",
+          "source": "84677e9e35264242894aef089b530003",
+          "target": "0478062a864640cf8996dcb0962dc656",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "968b832329594de4a407ce100b471ebe",
+          "edgeType": "Edge",
+          "source": "f0a7fb5f72ab4f87a41ba3dc0babc875",
+          "target": "dfea990d7f1b4539958ec87352e35391",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "06985ee339734640bbb8075341ba3926",
+          "edgeType": "Edge",
+          "source": "81d3d07d869d4061b8dedc9c3090c8a4",
+          "target": "5bf576c9185a43ba8f3f57a814d27a2f",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "d9a4fdd99b414836929522b2d6fb4777",
+          "edgeType": "Edge",
+          "source": "14eed32d058b4339a48128711d7da4ed",
+          "target": "f0a7fb5f72ab4f87a41ba3dc0babc875",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "b8145d607c46446ca5950baf37f75fb4",
+          "edgeType": "Edge",
+          "source": "0478062a864640cf8996dcb0962dc656",
+          "target": "234e8ab35ea6462d92df4fd31b59788b",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "d9213cdb1acf40b1b470dd62c6f8a9d0",
+          "edgeType": "Edge",
+          "source": "234e8ab35ea6462d92df4fd31b59788b",
+          "target": "14eed32d058b4339a48128711d7da4ed",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "86b2b67128894fa380ef2bf4ae2812d8",
+          "edgeType": "Edge",
+          "source": "dfea990d7f1b4539958ec87352e35391",
+          "target": "5abe71f6e7fd4608a63e4381bae2fbeb",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "c28bc86317df4d96ae248ccb393d742c",
+          "edgeType": "Edge",
+          "source": "5abe71f6e7fd4608a63e4381bae2fbeb",
+          "target": "81d3d07d869d4061b8dedc9c3090c8a4",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "47d304dc580c42cba90f2350e00be1b5": {
+      "id": "47d304dc580c42cba90f2350e00be1b5",
+      "name": "start_range",
+      "label": "Start Range",
+      "varType": "date_time",
+      "secure": false,
+      "category": "vaInputs",
+      "mode": "date"
+    },
+    "5fe4415fa4b24bd993cd830f197e851d": {
+      "id": "5fe4415fa4b24bd993cd830f197e851d",
+      "name": "end_range",
+      "label": "End Range",
+      "varType": "date_time",
+      "secure": false,
+      "category": "vaInputs",
+      "mode": "date"
+    },
+    "2db90b4e922b475081f41c275727b017": {
+      "id": "2db90b4e922b475081f41c275727b017",
+      "name": "state",
+      "label": "State",
+      "varType": "boolean",
+      "secure": false,
+      "category": "vaInputs"
+    },
+    "0ab823f1c1b34530b12580359b113f50": {
+      "id": "0ab823f1c1b34530b12580359b113f50",
+      "name": "other_actions",
+      "label": "Other Actions",
+      "varType": "choice",
+      "choices": [
+        {
+          "label": "View detail of a reservation",
+          "value": "View detail of a reservation"
+        },
+        {
+          "label": "Update a reservation",
+          "value": "Update a reservation"
+        },
+        {
+          "label": "View other reservation list",
+          "value": "View other reservation list",
+          "checked": true
+        },
+        {
+          "label": "Nothing",
+          "value": "Nothing",
+          "checked": true
+        }
+      ],
+      "category": "vaInputs"
+    },
+    "6f1dfb7007c448dba22ebb2968cec9d0": {
+      "id": "6f1dfb7007c448dba22ebb2968cec9d0",
+      "name": "detail_number",
+      "label": "Detail Number",
+      "varType": "string",
+      "secure": false,
+      "category": "vaInputs",
+      "encryptionHashFunction": "SHA-256",
+      "encryptionSalt": {
+        "value": "MTY4MTI5MTYzNTE3MiBWQSBEZXNpZ25lciBpcyBhd2Vzb21l",
+        "mode": "simple"
+      }
+    },
+    "68417382b69545bdbd0a3940a84fb053": {
+      "id": "68417382b69545bdbd0a3940a84fb053",
+      "name": "find_detail_record",
+      "label": "Find Detail Record",
+      "varType": "reference",
+      "table": "sn_wsd_core_reservation",
+      "category": "vaInputs"
+    },
+    "17286912c58b4281a7d56c6ea0a62756": {
+      "id": "17286912c58b4281a7d56c6ea0a62756",
+      "name": "update_number",
+      "label": "Update Number",
+      "varType": "string",
+      "secure": false,
+      "category": "vaInputs",
+      "encryptionHashFunction": "SHA-256",
+      "encryptionSalt": {
+        "value": "MTY4MTI5MzQ0ODMyOCBWQSBEZXNpZ25lciBpcyBhd2Vzb21l",
+        "mode": "simple"
+      }
+    },
+    "bf549cc9a5b140b495051ad7cc44c85d": {
+      "id": "bf549cc9a5b140b495051ad7cc44c85d",
+      "name": "find_update_record",
+      "label": "Find Update Record",
+      "varType": "reference",
+      "table": "sn_wsd_core_reservation",
+      "category": "vaInputs"
+    },
+    "b5b267ed06ec4efab9414f3ebc28af4f": {
+      "id": "b5b267ed06ec4efab9414f3ebc28af4f",
+      "name": "new_start",
+      "label": "New Start",
+      "varType": "date_time",
+      "secure": false,
+      "category": "vaInputs",
+      "mode": "date_time"
+    },
+    "9b771f24cb9644b7a7b228dd6db6a3a7": {
+      "id": "9b771f24cb9644b7a7b228dd6db6a3a7",
+      "name": "toggle_new_start",
+      "label": "Toggle New Start",
+      "varType": "boolean",
+      "secure": false,
+      "category": "vaInputs"
+    },
+    "b8f37d0de49f4f4abf7b3d6464478628": {
+      "id": "b8f37d0de49f4f4abf7b3d6464478628",
+      "name": "toggle_new_end",
+      "label": "Toggle New End",
+      "varType": "boolean",
+      "secure": false,
+      "category": "vaInputs"
+    },
+    "51dd8a0bf01848528a715779d232d3bb": {
+      "id": "51dd8a0bf01848528a715779d232d3bb",
+      "name": "new_end",
+      "label": "New End",
+      "varType": "date_time",
+      "secure": false,
+      "category": "vaInputs",
+      "mode": "date_time"
+    },
+    "29661d8eb56b4b90b0286cae6b6325ab": {
+      "id": "29661d8eb56b4b90b0286cae6b6325ab",
+      "name": "update_end_time",
+      "label": "Update End Time",
+      "varType": "reference",
+      "table": "",
+      "inactive": true,
+      "category": "vaInputs"
+    },
+    "77c1d97d9437401d9c3041d7fa29a1e3": {
+      "id": "77c1d97d9437401d9c3041d7fa29a1e3",
+      "name": "update_start_time",
+      "label": "Update Start Time",
+      "varType": "reference",
+      "table": "",
+      "inactive": true,
+      "category": "vaInputs"
+    },
+    "bc00c4655d9a4c30a15af665d8c0ae74": {
+      "id": "bc00c4655d9a4c30a15af665d8c0ae74",
+      "name": "transfer_to_agent",
+      "label": "Transfer To Agent",
+      "varType": "boolean",
+      "secure": false,
+      "category": "vaInputs"
+    }
+  }
+}</graph>
+        <key_phrases>View and Update Reservation,workplace request,my reservation</key_phrases>
+        <library>false</library>
+        <live_agent>false</live_agent>
+        <name>View and Update Reservation</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <palette_label/>
+        <roles>sn_wsd_core.workplace_user</roles>
+        <secure_custom_input_control>false</secure_custom_input_control>
+        <source_topic_id/>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-12 04:32:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>7d57f4db9746ad9051637d271153af14</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_name>View and Update Reservation</sys_name>
+        <sys_package display_value="Safe Workplace" source="x_1007530_safety_0">21dae86197c2e59051637d271153af33</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Safe Workplace">21dae86197c2e59051637d271153af33</sys_scope>
+        <sys_update_name>sys_cb_topic_7d57f4db9746ad9051637d271153af14</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 02:26:31</sys_updated_on>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>STANDARD</type>
+        <variables/>
+    </sys_cb_topic>
+    <sys_variable_value action="delete_multiple" query="document_key=7d57f4db9746ad9051637d271153af14"/>
+</record_update>
