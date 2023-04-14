@@ -2,21 +2,21 @@
     <sys_ux_ribbon_config_setting action="INSERT_OR_UPDATE">
         <active>true</active>
         <configuration display_value="Safety Workplace Workspace Ribbon Config">555fa4a517c2e59000f831c298676f8e</configuration>
-        <order>101</order>
-        <ribbon display_value="Workplace Request Timeline">276710319782299051637d271153af65</ribbon>
+        <order>100</order>
+        <ribbon display_value="Workplace Request SLA">c0defe77978e21d051637d271153afef</ribbon>
         <specificity>30</specificity>
         <sys_class_name>sys_ux_ribbon_config_setting</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-04-07 10:27:24</sys_created_on>
-        <sys_id>a168d0719782299051637d271153afff</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_created_on>2023-04-14 03:43:51</sys_created_on>
+        <sys_id>1e2fb2f7978e21d051637d271153afa0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Safe Workplace" source="x_1007530_safety_0">21dae86197c2e59051637d271153af33</sys_package>
         <sys_policy/>
         <sys_scope display_value="Safe Workplace">21dae86197c2e59051637d271153af33</sys_scope>
-        <sys_update_name>sys_ux_ribbon_config_setting_a168d0719782299051637d271153afff</sys_update_name>
+        <sys_update_name>sys_ux_ribbon_config_setting_1e2fb2f7978e21d051637d271153afa0</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-14 03:43:19</sys_updated_on>
+        <sys_updated_on>2023-04-14 03:43:51</sys_updated_on>
         <table>sn_wsd_core_workplace_request</table>
         <width>3</width>
     </sys_ux_ribbon_config_setting>

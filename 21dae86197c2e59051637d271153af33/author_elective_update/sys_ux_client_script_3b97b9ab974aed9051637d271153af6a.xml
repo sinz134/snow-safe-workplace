@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <includes/>
+        <macroponent display_value="Homepage default">fff72daf970aed9051637d271153aff6</macroponent>
+        <name>New client script 1</name>
+        <preset/>
+        <required_translations/>
+        <script><![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 03:52:19</sys_created_on>
+        <sys_id>3b97b9ab974aed9051637d271153af6a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New client script 1</sys_name>
+        <sys_package display_value="Safe Workplace" source="x_1007530_safety_0">21dae86197c2e59051637d271153af33</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Safe Workplace">21dae86197c2e59051637d271153af33</sys_scope>
+        <sys_update_name>sys_ux_client_script_3b97b9ab974aed9051637d271153af6a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 03:52:19</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Safe Workplace">21dae86197c2e59051637d271153af33</application>
+        <file_path/>
+        <instance_id>01d36297dbd92dd437a0c5970596199f</instance_id>
+        <instance_name>dev159030</instance_name>
+        <name>sys_ux_client_script_3b97b9ab974aed9051637d271153af6a</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;includes/&gt;&lt;macroponent display_value="Homepage default"&gt;fff72daf970aed9051637d271153aff6&lt;/macroponent&gt;&lt;name&gt;New client script 1&lt;/name&gt;&lt;preset/&gt;&lt;required_translations/&gt;&lt;script&gt;&lt;![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-04-13 03:52:19&lt;/sys_created_on&gt;&lt;sys_id&gt;3b97b9ab974aed9051637d271153af6a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;New client script 1&lt;/sys_name&gt;&lt;sys_package display_value="Safe Workplace" source="x_1007530_safety_0"&gt;21dae86197c2e59051637d271153af33&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Safe Workplace"&gt;21dae86197c2e59051637d271153af33&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_3b97b9ab974aed9051637d271153af6a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-04-13 03:52:19&lt;/sys_updated_on&gt;&lt;target&gt;macroponent&lt;/target&gt;&lt;type&gt;default&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>558426510</payload_hash>
+        <record_name>New client script 1</record_name>
+        <reverted_from/>
+        <source>bd7ba42197c2e59051637d271153af2c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 03:52:19</sys_created_on>
+        <sys_id>7f97796f974aed9051637d271153af43</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18778be247f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 03:52:19</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>f797796ffc4aed90d7dac786d07e7843</update_guid>
+        <update_guid_history>f797796ffc4aed90d7dac786d07e7843:558426510</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-13 04:03:04</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>cba1ba647e03491087582adc2ff4c240</sys_id>
+        <sys_metadata>3b97b9ab974aed9051637d271153af6a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New client script 1</sys_name>
+        <sys_package display_value="Safe Workplace" source="x_1007530_safety_0">21dae86197c2e59051637d271153af33</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Safe Workplace">21dae86197c2e59051637d271153af33</sys_scope>
+        <sys_scope_delete display_value="">48cecd2a630045c0ba0a09020318e100</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_3b97b9ab974aed9051637d271153af6a</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_3b97b9ab974aed9051637d271153af6a">7f97796f974aed9051637d271153af43</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-13 04:03:04</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
