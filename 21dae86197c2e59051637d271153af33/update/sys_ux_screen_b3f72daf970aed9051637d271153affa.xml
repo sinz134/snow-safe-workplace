@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
     <sys_ux_screen action="INSERT_OR_UPDATE">
-        <active>false</active>
+        <active>true</active>
         <app_config display_value="Safety Workplace Workspace Config">995fa4a5e5c2e590dae8aef910279a95</app_config>
         <description/>
         <event_mappings>[ ]</event_mappings>
-        <macroponent display_value="Record default">1d5fa4a57ec2e590dd25173a3c7bc58f</macroponent>
+        <macroponent display_value="Homepage default">fff72daf970aed9051637d271153aff6</macroponent>
         <macroponent_config>{
-  "views" : {
-    "type" : "JSON_LITERAL",
-    "value" : ""
-  },
-  "selectedTabIndex" : {
-    "type" : "JSON_LITERAL",
-    "value" : 0
-  },
   "label" : {
     "type" : "TRANSLATION_LITERAL",
     "value" : {
@@ -47,28 +39,28 @@
     "value" : false
   }
 }</macroponent_config>
-        <name>Record default</name>
+        <name>Homepage default</name>
         <order>0</order>
         <parent_macroponent display_value="Agent Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent>
         <required_translations>[ ]</required_translations>
         <rollback_screen/>
         <screen_condition/>
-        <screen_type display_value="Record">915fa4a580c2e59045eeb4b430dc9992</screen_type>
+        <screen_type display_value="Homepage">f3f72daf970aed9051637d271153aff4</screen_type>
         <sys_class_name>sys_ux_screen</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-04-06 17:28:39</sys_created_on>
+        <sys_created_on>2023-04-13 02:44:03</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>dd5fa4a588c2e59083517ee210be738f</sys_id>
+        <sys_id>b3f72daf970aed9051637d271153affa</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_name>Record default</sys_name>
+        <sys_name>Homepage default</sys_name>
         <sys_overrides/>
         <sys_package display_value="Safe Workplace" source="x_1007530_safety_0">21dae86197c2e59051637d271153af33</sys_package>
         <sys_policy/>
         <sys_scope display_value="Safe Workplace">21dae86197c2e59051637d271153af33</sys_scope>
-        <sys_update_name>sys_ux_screen_dd5fa4a588c2e59083517ee210be738f</sys_update_name>
+        <sys_update_name>sys_ux_screen_b3f72daf970aed9051637d271153affa</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-19 14:46:24</sys_updated_on>
+        <sys_updated_on>2023-04-13 03:11:23</sys_updated_on>
     </sys_ux_screen>
-    <sys_translated_text action="delete_multiple" query="documentkey=dd5fa4a588c2e59083517ee210be738f"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=b3f72daf970aed9051637d271153affa"/>
 </record_update>

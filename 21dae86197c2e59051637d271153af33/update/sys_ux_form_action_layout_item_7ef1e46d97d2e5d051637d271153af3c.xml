@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_form_action_layout_item">
+    <sys_ux_form_action_layout_item action="INSERT_OR_UPDATE">
+        <action display_value="Open collab chat">9fdc05f5c31130100f24c87af040dd6a</action>
+        <active>true</active>
+        <color>primary</color>
+        <description/>
+        <item_type>action</item_type>
+        <label>Discuss</label>
+        <layout_group/>
+        <name>Open collab chat</name>
+        <order>0</order>
+        <overflow>false</overflow>
+        <sys_class_name>sys_ux_form_action_layout_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-19 02:46:00</sys_created_on>
+        <sys_id>7ef1e46d97d2e5d051637d271153af3c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Discuss</sys_name>
+        <sys_package display_value="Safe Workplace" source="x_1007530_safety_0">21dae86197c2e59051637d271153af33</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Safe Workplace">21dae86197c2e59051637d271153af33</sys_scope>
+        <sys_update_name>sys_ux_form_action_layout_item_7ef1e46d97d2e5d051637d271153af3c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-19 02:46:41</sys_updated_on>
+        <table>global</table>
+    </sys_ux_form_action_layout_item>
+</record_update>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_m2m_action_layout_item">
+    <sys_ux_m2m_action_layout_item action="DELETE">
+        <active>true</active>
+        <sys_class_name>sys_ux_m2m_action_layout_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-19 07:08:44</sys_created_on>
+        <sys_id>ef1e1da997d6e5d051637d271153aff4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Safe Workplace" source="x_1007530_safety_0">21dae86197c2e59051637d271153af33</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Safe Workplace">21dae86197c2e59051637d271153af33</sys_scope>
+        <sys_update_name>sys_ux_m2m_action_layout_item_ef1e1da997d6e5d051637d271153aff4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-19 07:08:44</sys_updated_on>
+        <table>global</table>
+        <ux_form_action_layout display_value="Travel Actions">d0ed5da997d6e5d051637d271153afbe</ux_form_action_layout>
+        <ux_form_action_layout_item display_value="Discuss">09dd8df5c31130100f24c87af040ddb4</ux_form_action_layout_item>
+    </sys_ux_m2m_action_layout_item>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Safe Workplace">21dae86197c2e59051637d271153af33</application>
+        <file_path/>
+        <instance_id>01d36297dbd92dd437a0c5970596199f</instance_id>
+        <instance_name>dev159030</instance_name>
+        <name>sys_ux_m2m_action_layout_item_ef1e1da997d6e5d051637d271153aff4</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_m2m_action_layout_item"><sys_ux_m2m_action_layout_item action="INSERT_OR_UPDATE"><active>true</active><sys_class_name>sys_ux_m2m_action_layout_item</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-04-19 07:08:44</sys_created_on><sys_id>ef1e1da997d6e5d051637d271153aff4</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Safe Workplace" source="x_1007530_safety_0">21dae86197c2e59051637d271153af33</sys_package><sys_policy/><sys_scope display_value="Safe Workplace">21dae86197c2e59051637d271153af33</sys_scope><sys_update_name>sys_ux_m2m_action_layout_item_ef1e1da997d6e5d051637d271153aff4</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-04-19 07:08:44</sys_updated_on><table>global</table><ux_form_action_layout display_value="Travel Actions">d0ed5da997d6e5d051637d271153afbe</ux_form_action_layout><ux_form_action_layout_item display_value="Discuss">09dd8df5c31130100f24c87af040ddb4</ux_form_action_layout_item></sys_ux_m2m_action_layout_item></record_update>]]></payload>
+        <payload_hash>278359203</payload_hash>
+        <record_name>global</record_name>
+        <reverted_from/>
+        <source>bd7ba42197c2e59051637d271153af2c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-19 07:08:44</sys_created_on>
+        <sys_id>a71e1da997d6e5d051637d271153aff7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18798581d9d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-19 07:08:44</sys_updated_on>
+        <type>Sys Ux M2m Action Layout Item</type>
+        <update_guid>ef1e1da9d1d6e5d09c02791a9da964f6</update_guid>
+        <update_guid_history>ef1e1da9d1d6e5d09c02791a9da964f6:278359203</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-19 07:09:31</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_m2m_action_layout_item">sys_ux_m2m_action_layout_item</sys_db_object>
+        <sys_id>7b6bb30340314e48ad0ae555a9cde189</sys_id>
+        <sys_metadata>ef1e1da997d6e5d051637d271153aff4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Safe Workplace" source="x_1007530_safety_0">21dae86197c2e59051637d271153af33</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Safe Workplace">21dae86197c2e59051637d271153af33</sys_scope>
+        <sys_scope_delete display_value="">48cecd2a630045c0ba0a09020318e100</sys_scope_delete>
+        <sys_update_name>sys_ux_m2m_action_layout_item_ef1e1da997d6e5d051637d271153aff4</sys_update_name>
+        <sys_update_version display_value="sys_ux_m2m_action_layout_item_ef1e1da997d6e5d051637d271153aff4">a71e1da997d6e5d051637d271153aff7</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-19 07:09:31</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

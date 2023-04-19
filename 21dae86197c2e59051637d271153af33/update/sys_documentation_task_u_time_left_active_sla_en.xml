@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_time_left_active_sla" label="Time Left Active SLA" language="en" table="task">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_time_left_active_sla</element>
+            <help/>
+            <hint/>
+            <label>Time Left Active SLA</label>
+            <language>en</language>
+            <name>task</name>
+            <plural>Time Left Active SLAs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-04-14 04:08:38</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Time Left Active SLA</sys_name>
+            <sys_package display_value="Safe Workplace" source="x_1007530_safety_0">21dae86197c2e59051637d271153af33</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Safe Workplace">21dae86197c2e59051637d271153af33</sys_scope>
+            <sys_update_name>sys_documentation_task_u_time_left_active_sla_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-04-14 04:08:38</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

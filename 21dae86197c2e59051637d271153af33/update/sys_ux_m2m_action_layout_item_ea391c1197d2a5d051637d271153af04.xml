@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_m2m_action_layout_item">
+    <sys_ux_m2m_action_layout_item action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <sys_class_name>sys_ux_m2m_action_layout_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-18 07:29:16</sys_created_on>
+        <sys_id>ea391c1197d2a5d051637d271153af04</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Safe Workplace" source="x_1007530_safety_0">21dae86197c2e59051637d271153af33</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Safe Workplace">21dae86197c2e59051637d271153af33</sys_scope>
+        <sys_update_name>sys_ux_m2m_action_layout_item_ea391c1197d2a5d051637d271153af04</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-18 07:29:16</sys_updated_on>
+        <table>global</table>
+        <ux_form_action_layout display_value="Task Actions">2ff8541197d2a5d051637d271153af71</ux_form_action_layout>
+        <ux_form_action_layout_item display_value="Discuss">09dd8df5c31130100f24c87af040ddb4</ux_form_action_layout_item>
+    </sys_ux_m2m_action_layout_item>
+</record_update>

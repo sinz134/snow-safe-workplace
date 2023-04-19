@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
     <sys_ux_client_script action="INSERT_OR_UPDATE">
         <includes/>
-        <macroponent display_value="Record default">1d5fa4a57ec2e590dd25173a3c7bc58f</macroponent>
-        <name>viewport_gph/initiallyCollapsed</name>
+        <macroponent display_value="Home">595fa4a535c2e590a2e915e2ea79ed92</macroponent>
+        <name>stylized_text_1/text</name>
         <preset/>
-        <required_translations/>
+        <required_translations>[ ]</required_translations>
         <script><![CDATA[/**
   * @param {params} params
   * @param {api} params.api
   * @param {TransformApiHelpers} params.helpers
   */
 function evaluateProperty({api, helpers}) {
-	return api.context.props.userPrefs['workspace.showAgentAssist'] != 'true';
+	return 'Hello, ' + api.context.session.user.firstName + "!";
 }]]></script>
         <script_api_version>2.0.0</script_api_version>
         <sys_class_name>sys_ux_client_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-04-06 17:28:39</sys_created_on>
-        <sys_id>155fa4a526c2e59087f16d8786686d95</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>viewport_gph/initiallyCollapsed</sys_name>
+        <sys_created_on>2023-04-13 04:30:19</sys_created_on>
+        <sys_id>1c508667978aed9051637d271153af28</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>stylized_text_1/text</sys_name>
         <sys_package display_value="Safe Workplace" source="x_1007530_safety_0">21dae86197c2e59051637d271153af33</sys_package>
         <sys_policy/>
         <sys_scope display_value="Safe Workplace">21dae86197c2e59051637d271153af33</sys_scope>
-        <sys_update_name>sys_ux_client_script_155fa4a526c2e59087f16d8786686d95</sys_update_name>
+        <sys_update_name>sys_ux_client_script_1c508667978aed9051637d271153af28</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-06 17:28:39</sys_updated_on>
+        <sys_updated_on>2023-04-13 07:42:12</sys_updated_on>
         <target>macroponent</target>
         <type>transform</type>
     </sys_ux_client_script>

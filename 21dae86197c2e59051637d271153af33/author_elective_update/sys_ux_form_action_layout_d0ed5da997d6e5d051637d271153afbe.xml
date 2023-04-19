@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_form_action_layout">
+    <sys_ux_form_action_layout action="DELETE">
+        <action_config display_value="WR Config">34f0a42d97d2e5d051637d271153af43</action_config>
+        <active>true</active>
+        <description/>
+        <name>Travel Actions</name>
+        <specificity>20</specificity>
+        <sys_class_name>sys_ux_form_action_layout</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-19 07:08:14</sys_created_on>
+        <sys_id>d0ed5da997d6e5d051637d271153afbe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Travel Actions</sys_name>
+        <sys_package display_value="Safe Workplace" source="x_1007530_safety_0">21dae86197c2e59051637d271153af33</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Safe Workplace">21dae86197c2e59051637d271153af33</sys_scope>
+        <sys_update_name>sys_ux_form_action_layout_d0ed5da997d6e5d051637d271153afbe</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-19 07:08:14</sys_updated_on>
+        <table>sn_imt_travel_request</table>
+    </sys_ux_form_action_layout>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Safe Workplace">21dae86197c2e59051637d271153af33</application>
+        <file_path/>
+        <instance_id>01d36297dbd92dd437a0c5970596199f</instance_id>
+        <instance_name>dev159030</instance_name>
+        <name>sys_ux_form_action_layout_d0ed5da997d6e5d051637d271153afbe</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_form_action_layout"><sys_ux_form_action_layout action="INSERT_OR_UPDATE"><action_config display_value="WR Config">34f0a42d97d2e5d051637d271153af43</action_config><active>true</active><description/><name>Travel Actions</name><specificity>20</specificity><sys_class_name>sys_ux_form_action_layout</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-04-19 07:08:14</sys_created_on><sys_id>d0ed5da997d6e5d051637d271153afbe</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Travel Actions</sys_name><sys_package display_value="Safe Workplace" source="x_1007530_safety_0">21dae86197c2e59051637d271153af33</sys_package><sys_policy/><sys_scope display_value="Safe Workplace">21dae86197c2e59051637d271153af33</sys_scope><sys_update_name>sys_ux_form_action_layout_d0ed5da997d6e5d051637d271153afbe</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-04-19 07:08:14</sys_updated_on><table>sn_imt_travel_request</table></sys_ux_form_action_layout></record_update>]]></payload>
+        <payload_hash>-2023830304</payload_hash>
+        <record_name>Travel Actions</record_name>
+        <reverted_from/>
+        <source>bd7ba42197c2e59051637d271153af2c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-19 07:08:14</sys_created_on>
+        <sys_id>540e9da997d6e5d051637d271153af1f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1879857ab040000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-19 07:08:14</sys_updated_on>
+        <type>UX Form Actions Layout</type>
+        <update_guid>1c0e9da9edd6e5d0b4308c82cca01b1e</update_guid>
+        <update_guid_history>1c0e9da9edd6e5d0b4308c82cca01b1e:-2023830304</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-19 07:11:07</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_form_action_layout">sys_ux_form_action_layout</sys_db_object>
+        <sys_id>21d62d720fac44c98ea119798449ff59</sys_id>
+        <sys_metadata>d0ed5da997d6e5d051637d271153afbe</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Travel Actions</sys_name>
+        <sys_package display_value="Safe Workplace" source="x_1007530_safety_0">21dae86197c2e59051637d271153af33</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Safe Workplace">21dae86197c2e59051637d271153af33</sys_scope>
+        <sys_scope_delete display_value="">48cecd2a630045c0ba0a09020318e100</sys_scope_delete>
+        <sys_update_name>sys_ux_form_action_layout_d0ed5da997d6e5d051637d271153afbe</sys_update_name>
+        <sys_update_version display_value="sys_ux_form_action_layout_d0ed5da997d6e5d051637d271153afbe">540e9da997d6e5d051637d271153af1f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-19 07:11:07</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
