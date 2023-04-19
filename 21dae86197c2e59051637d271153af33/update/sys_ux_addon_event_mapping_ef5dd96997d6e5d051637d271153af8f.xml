@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_addon_event_mapping">
+    <sys_ux_addon_event_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <controller/>
+        <description/>
+        <name>Open create collab chat travel</name>
+        <parent_macroponent display_value="Employee Travel Safety Request Record Page">006fe8a597c2e59051637d271153af2e</parent_macroponent>
+        <source_component/>
+        <source_da display_value="Open create collab chat modal">040b41b5c31130100f24c87af040dd66</source_da>
+        <source_element_id>ui_action_bar</source_element_id>
+        <sys_class_name>sys_ux_addon_event_mapping</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-19 07:05:28</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ef5dd96997d6e5d051637d271153af8f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Open create collab chat travel</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Safe Workplace" source="x_1007530_safety_0">21dae86197c2e59051637d271153af33</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Safe Workplace">21dae86197c2e59051637d271153af33</sys_scope>
+        <sys_update_name>sys_ux_addon_event_mapping_ef5dd96997d6e5d051637d271153af8f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-19 07:05:44</sys_updated_on>
+        <target_event display_value="RECORD#OPEN_COLLAB_CHAT">a91838b3b7900110ffe5ef54ce11a98c</target_event>
+        <target_payload_mapping>{&#13;
+      "type": "MAP_CONTAINER",&#13;
+      "container": {&#13;
+      "fields": {&#13;
+      "type": "EVENT_PAYLOAD_BINDING",&#13;
+      "binding": {&#13;
+      "address": [&#13;
+      "fields"&#13;
+      ]&#13;
+      }&#13;
+      }   &#13;
+      }&#13;
+      }</target_payload_mapping>
+    </sys_ux_addon_event_mapping>
+</record_update>
