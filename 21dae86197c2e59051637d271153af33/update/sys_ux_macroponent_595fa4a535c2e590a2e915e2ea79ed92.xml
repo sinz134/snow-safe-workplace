@@ -780,11 +780,18 @@
                   "container" : {
                     "route" : {
                       "type" : "JSON_LITERAL",
-                      "value" : "list"
+                      "value" : "simplelist"
                     },
                     "fields" : {
-                      "type" : "JSON_LITERAL",
-                      "value" : null
+                      "type" : "MAP_CONTAINER",
+                      "container" : {
+                        "table" : {
+                          "type" : "EVENT_PAYLOAD_BINDING",
+                          "binding" : {
+                            "address" : [ "params", "table" ]
+                          }
+                        }
+                      }
                     },
                     "params" : {
                       "type" : "MAP_CONTAINER",
@@ -796,6 +803,22 @@
                         "tinyId" : {
                           "type" : "JSON_LITERAL",
                           "value" : "a9a5fa3f974e21d051637d271153af70"
+                        },
+                        "configId" : {
+                          "type" : "JSON_LITERAL",
+                          "value" : null
+                        },
+                        "query" : {
+                          "type" : "EVENT_PAYLOAD_BINDING",
+                          "binding" : {
+                            "address" : [ "params", "query" ]
+                          }
+                        },
+                        "listTitle" : {
+                          "type" : "EVENT_PAYLOAD_BINDING",
+                          "binding" : {
+                            "address" : [ "params", "listTitle" ]
+                          }
                         }
                       }
                     },
@@ -819,10 +842,7 @@
                       "type" : "JSON_LITERAL",
                       "value" : null
                     },
-                    "external" : {
-                      "type" : "JSON_LITERAL",
-                      "value" : null
-                    }
+                    "external" : null
                   }
                 },
                 "sysId" : "595fa4a5cec2e5908e18cf4ae81b6395"
@@ -1226,19 +1246,72 @@
               "event" : {
                 "apiName" : "x_1007530_safety_0.NAV_ITEM_SELECTED_RELAY_595fa4a535c2e590a2e915e2ea79ed92",
                 "payload" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : {
-                    "route" : "list",
-                    "fields" : null,
-                    "params" : {
-                      "listId" : "a25fe4a597c2e59051637d271153afd6",
-                      "tinyId" : "afd36bbf970261d051637d271153afac"
+                  "type" : "MAP_CONTAINER",
+                  "container" : {
+                    "route" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : "simplelist"
                     },
-                    "redirect" : null,
-                    "passiveNavigation" : null,
-                    "title" : "Open ",
-                    "multiInstField" : null,
-                    "targetRoute" : null,
+                    "fields" : {
+                      "type" : "MAP_CONTAINER",
+                      "container" : {
+                        "table" : {
+                          "type" : "EVENT_PAYLOAD_BINDING",
+                          "binding" : {
+                            "address" : [ "params", "table" ]
+                          }
+                        }
+                      }
+                    },
+                    "params" : {
+                      "type" : "MAP_CONTAINER",
+                      "container" : {
+                        "listId" : {
+                          "type" : "JSON_LITERAL",
+                          "value" : "a25fe4a597c2e59051637d271153afd6"
+                        },
+                        "tinyId" : {
+                          "type" : "JSON_LITERAL",
+                          "value" : "afd36bbf970261d051637d271153afac"
+                        },
+                        "listTitle" : {
+                          "type" : "EVENT_PAYLOAD_BINDING",
+                          "binding" : {
+                            "address" : [ "params", "listTitle" ]
+                          }
+                        },
+                        "query" : {
+                          "type" : "EVENT_PAYLOAD_BINDING",
+                          "binding" : {
+                            "address" : [ "params", "query" ]
+                          }
+                        },
+                        "disableInlineEditing" : {
+                          "type" : "JSON_LITERAL",
+                          "value" : null
+                        }
+                      }
+                    },
+                    "redirect" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "passiveNavigation" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "title" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : "Open "
+                    },
+                    "multiInstField" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "targetRoute" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
                     "external" : null
                   }
                 },
@@ -1647,11 +1720,18 @@
                   "container" : {
                     "route" : {
                       "type" : "JSON_LITERAL",
-                      "value" : "list"
+                      "value" : "simplelist"
                     },
                     "fields" : {
-                      "type" : "JSON_LITERAL",
-                      "value" : null
+                      "type" : "MAP_CONTAINER",
+                      "container" : {
+                        "table" : {
+                          "type" : "EVENT_PAYLOAD_BINDING",
+                          "binding" : {
+                            "address" : [ "params", "table" ]
+                          }
+                        }
+                      }
                     },
                     "params" : {
                       "type" : "MAP_CONTAINER",
@@ -1663,6 +1743,18 @@
                         "tinyId" : {
                           "type" : "JSON_LITERAL",
                           "value" : "da6bcbb797ce21d051637d271153aff7"
+                        },
+                        "query" : {
+                          "type" : "EVENT_PAYLOAD_BINDING",
+                          "binding" : {
+                            "address" : [ "params", "query" ]
+                          }
+                        },
+                        "listTitle" : {
+                          "type" : "EVENT_PAYLOAD_BINDING",
+                          "binding" : {
+                            "address" : [ "params", "listTitle" ]
+                          }
                         }
                       }
                     },
@@ -1686,10 +1778,7 @@
                       "type" : "JSON_LITERAL",
                       "value" : null
                     },
-                    "external" : {
-                      "type" : "JSON_LITERAL",
-                      "value" : null
-                    }
+                    "external" : null
                   }
                 },
                 "sysId" : "595fa4a5cec2e5908e18cf4ae81b6395"
@@ -2092,11 +2181,18 @@
                   "container" : {
                     "route" : {
                       "type" : "JSON_LITERAL",
-                      "value" : "list"
+                      "value" : "simplelist"
                     },
                     "fields" : {
-                      "type" : "JSON_LITERAL",
-                      "value" : null
+                      "type" : "MAP_CONTAINER",
+                      "container" : {
+                        "table" : {
+                          "type" : "EVENT_PAYLOAD_BINDING",
+                          "binding" : {
+                            "address" : [ "params", "table" ]
+                          }
+                        }
+                      }
                     },
                     "params" : {
                       "type" : "MAP_CONTAINER",
@@ -2108,6 +2204,18 @@
                         "tinyId" : {
                           "type" : "JSON_LITERAL",
                           "value" : "5bf2013a97462d9051637d271153af23"
+                        },
+                        "listTitle" : {
+                          "type" : "EVENT_PAYLOAD_BINDING",
+                          "binding" : {
+                            "address" : [ "params", "listTitle" ]
+                          }
+                        },
+                        "query" : {
+                          "type" : "EVENT_PAYLOAD_BINDING",
+                          "binding" : {
+                            "address" : [ "params", "query" ]
+                          }
                         }
                       }
                     },
@@ -3032,7 +3140,85 @@
               "value" : false
             }
           },
-          "eventMappings" : [ ],
+          "eventMappings" : [ {
+            "eventMappingId" : "clgshsjbbpaaccblddffhhrqfxjhheeddx",
+            "isConfiguration" : false,
+            "offRowStorageId" : null,
+            "sourceEventApiName" : "sn_record_list_con.NOW_RECORD_LIST_CONNECTED#ROW_CLICKED",
+            "sourceEventCorrelationId" : null,
+            "sourceEventDefinition" : {
+              "apiName" : "sn_record_list_con.NOW_RECORD_LIST_CONNECTED#ROW_CLICKED",
+              "id" : null,
+              "type" : "UXEVENT"
+            },
+            "sourceEventSysId" : null,
+            "targets" : [ {
+              "broker" : null,
+              "clientScript" : null,
+              "conditional" : null,
+              "declarativeAction" : null,
+              "event" : {
+                "apiName" : "x_1007530_safety_0.NAV_ITEM_SELECTED_RELAY_595fa4a535c2e590a2e915e2ea79ed92",
+                "payload" : {
+                  "type" : "MAP_CONTAINER",
+                  "container" : {
+                    "route" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : "record"
+                    },
+                    "fields" : {
+                      "type" : "MAP_CONTAINER",
+                      "container" : {
+                        "table" : {
+                          "type" : "EVENT_PAYLOAD_BINDING",
+                          "binding" : {
+                            "address" : [ "table" ]
+                          }
+                        },
+                        "sysId" : {
+                          "type" : "EVENT_PAYLOAD_BINDING",
+                          "binding" : {
+                            "address" : [ "sys_id" ]
+                          }
+                        }
+                      }
+                    },
+                    "params" : {
+                      "type" : "MAP_CONTAINER",
+                      "container" : {
+                        "views" : null
+                      }
+                    },
+                    "redirect" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "passiveNavigation" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "title" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "multiInstField" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "targetRoute" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "external" : null
+                  }
+                },
+                "sysId" : "595fa4a5cec2e5908e18cf4ae81b6395"
+              },
+              "operation" : null,
+              "targetId" : "clgshsjbbpaaccbmddffhhryyddpztbl",
+              "type" : "EVENT"
+            } ]
+          } ],
           "slot" : "",
           "definition" : {
             "id" : "2b1c080881e05dc63b917044290b233f",
@@ -4056,7 +4242,83 @@
               "value" : false
             }
           },
-          "eventMappings" : [ ],
+          "eventMappings" : [ {
+            "eventMappingId" : "clgshwjjufaacccwddffhhrjciijndiic",
+            "isConfiguration" : false,
+            "offRowStorageId" : null,
+            "sourceEventApiName" : "sn_record_list_con.NOW_RECORD_LIST_CONNECTED#ROW_CLICKED",
+            "sourceEventCorrelationId" : null,
+            "sourceEventDefinition" : {
+              "apiName" : "sn_record_list_con.NOW_RECORD_LIST_CONNECTED#ROW_CLICKED",
+              "id" : null,
+              "type" : "UXEVENT"
+            },
+            "sourceEventSysId" : null,
+            "targets" : [ {
+              "broker" : null,
+              "clientScript" : null,
+              "conditional" : null,
+              "declarativeAction" : null,
+              "event" : {
+                "apiName" : "x_1007530_safety_0.NAV_ITEM_SELECTED_RELAY_595fa4a535c2e590a2e915e2ea79ed92",
+                "payload" : {
+                  "type" : "MAP_CONTAINER",
+                  "container" : {
+                    "route" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : "record"
+                    },
+                    "fields" : {
+                      "type" : "MAP_CONTAINER",
+                      "container" : {
+                        "table" : {
+                          "type" : "EVENT_PAYLOAD_BINDING",
+                          "binding" : {
+                            "address" : [ "table" ]
+                          }
+                        },
+                        "sysId" : {
+                          "type" : "EVENT_PAYLOAD_BINDING",
+                          "binding" : {
+                            "address" : [ "sys_id" ]
+                          }
+                        }
+                      }
+                    },
+                    "params" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "redirect" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "passiveNavigation" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "title" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "multiInstField" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "targetRoute" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "external" : null
+                  }
+                },
+                "sysId" : "595fa4a5cec2e5908e18cf4ae81b6395"
+              },
+              "operation" : null,
+              "targetId" : "clgshwjjufaacccxddffhhryabcclqgc",
+              "type" : "EVENT"
+            } ]
+          } ],
           "slot" : null,
           "definition" : {
             "id" : "2b1c080881e05dc63b917044290b233f",
@@ -6254,7 +6516,83 @@
               "value" : false
             }
           },
-          "eventMappings" : [ ],
+          "eventMappings" : [ {
+            "eventMappingId" : "clgshxkmraaccdfddffhhrupoulyldd",
+            "isConfiguration" : false,
+            "offRowStorageId" : null,
+            "sourceEventApiName" : "sn_record_list_con.NOW_RECORD_LIST_CONNECTED#ROW_CLICKED",
+            "sourceEventCorrelationId" : null,
+            "sourceEventDefinition" : {
+              "apiName" : "sn_record_list_con.NOW_RECORD_LIST_CONNECTED#ROW_CLICKED",
+              "id" : null,
+              "type" : "UXEVENT"
+            },
+            "sourceEventSysId" : null,
+            "targets" : [ {
+              "broker" : null,
+              "clientScript" : null,
+              "conditional" : null,
+              "declarativeAction" : null,
+              "event" : {
+                "apiName" : "x_1007530_safety_0.NAV_ITEM_SELECTED_RELAY_595fa4a535c2e590a2e915e2ea79ed92",
+                "payload" : {
+                  "type" : "MAP_CONTAINER",
+                  "container" : {
+                    "route" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : "record"
+                    },
+                    "fields" : {
+                      "type" : "MAP_CONTAINER",
+                      "container" : {
+                        "table" : {
+                          "type" : "EVENT_PAYLOAD_BINDING",
+                          "binding" : {
+                            "address" : [ "table" ]
+                          }
+                        },
+                        "sysId" : {
+                          "type" : "EVENT_PAYLOAD_BINDING",
+                          "binding" : {
+                            "address" : [ "sys_id" ]
+                          }
+                        }
+                      }
+                    },
+                    "params" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "redirect" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "passiveNavigation" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "title" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "multiInstField" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "targetRoute" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "external" : null
+                  }
+                },
+                "sysId" : "595fa4a5cec2e5908e18cf4ae81b6395"
+              },
+              "operation" : null,
+              "targetId" : "clgshxkmraaccdgddffhhrffjypbiiht",
+              "type" : "EVENT"
+            } ]
+          } ],
           "slot" : null,
           "definition" : {
             "id" : "2b1c080881e05dc63b917044290b233f",
@@ -7010,14 +7348,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-04-06 17:28:40</sys_created_on>
         <sys_id>595fa4a535c2e590a2e915e2ea79ed92</sys_id>
-        <sys_mod_count>138</sys_mod_count>
+        <sys_mod_count>142</sys_mod_count>
         <sys_name>Home</sys_name>
         <sys_package display_value="Safe Workplace" source="x_1007530_safety_0">21dae86197c2e59051637d271153af33</sys_package>
         <sys_policy/>
         <sys_scope display_value="Safe Workplace">21dae86197c2e59051637d271153af33</sys_scope>
         <sys_update_name>sys_ux_macroponent_595fa4a535c2e590a2e915e2ea79ed92</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-19 07:27:05</sys_updated_on>
+        <sys_updated_on>2023-04-22 21:59:15</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=595fa4a535c2e590a2e915e2ea79ed92"/>
 </record_update>

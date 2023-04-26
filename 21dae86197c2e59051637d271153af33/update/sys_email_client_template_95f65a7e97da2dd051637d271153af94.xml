@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_email_client_template">
+    <sys_email_client_template action="INSERT_OR_UPDATE">
+        <blind_copied/>
+        <body/>
+        <body_html/>
+        <condition/>
+        <content_type>text/html</content_type>
+        <copied/>
+        <email_client_from_address/>
+        <from/>
+        <from_generation_type/>
+        <name>Workplace request Template</name>
+        <order>90</order>
+        <recipients>requested_for</recipients>
+        <reply_to/>
+        <script_from><![CDATA[(function (fromAddressQuery, targetRecord) {
+		/**
+		 * fromAddressQuery: A GlideRecord on the table "sys_email_client_from_address". Add conditions to filter the
+		 * 		the email addresses displayed in the Email Client. 
+		 * targetRecord: A GlideRecord representing the record in which the Email Client was opened from
+		 */
+
+})(fromAddressQuery, targetRecord);]]></script_from>
+        <subject>${number} - ${short_description}</subject>
+        <sys_class_name>sys_email_client_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-23 08:30:14</sys_created_on>
+        <sys_id>95f65a7e97da2dd051637d271153af94</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Workplace request Template</sys_name>
+        <sys_package display_value="Safe Workplace" source="x_1007530_safety_0">21dae86197c2e59051637d271153af33</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Safe Workplace">21dae86197c2e59051637d271153af33</sys_scope>
+        <sys_update_name>sys_email_client_template_95f65a7e97da2dd051637d271153af94</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-23 08:30:54</sys_updated_on>
+        <table>sn_wsd_core_workplace_request</table>
+    </sys_email_client_template>
+</record_update>

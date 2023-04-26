@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>compose_email_workspace</action_name>
+        <active>true</active>
+        <client>true</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+	var LEGACY_EMAIL_CLIENT_NAME = 'sn-email-editor',
+		SEISMIC_EMAIL_CLIENT_NAME = 'sn-email-client-wrapper',
+		EMAIL = 'sys_email',
+		DRAFT = 'sys_email_draft',
+		tValue = DRAFT;
+
+	//get the list of renderers
+	var renderers = [];
+	if (ux_globals && ux_globals.presource['sn-workspace-content:snCustomRenderer']) {
+		renderers = ux_globals.presource['sn-workspace-content:snCustomRenderer'].data.GlideRecord_Query.sys_aw_renderer._results;
+	}
+
+	if (renderers.length > 0) {
+		// Filter out Email renderers
+		var renderMap = {};
+		renderers.filter(function(o) {
+			return o.table.value == EMAIL || o.table.value == DRAFT;
+		}).map(function(o) {
+			renderMap[o.table.value] = o.custom_renderer_tag.value;
+		});
+
+		//Figure out the final value
+		if (!renderMap.hasOwnProperty(DRAFT))
+			tValue = EMAIL;
+		else {
+			if (!renderMap.hasOwnProperty(EMAIL))
+				tValue = DRAFT;
+			else if (renderMap[EMAIL] == LEGACY_EMAIL_CLIENT_NAME)
+				tValue = EMAIL;
+		}
+	}
+	
+	var dirtyFieldList = g_form.serialize(true).map(function(field) {
+		return {
+			field: field.name,
+			value: field.value
+		};
+	});
+	g_aw.openRecord(tValue, '-1', {parentTable: g_form.getTableName(), parentSysId: g_form.getSysId(), headerValue: getMessage("New Email"), dirtyFields: dirtyFieldList});
+}]]></client_script_v2>
+        <comments/>
+        <condition>new EmailEditorUtil().showInWorkspaceFormMenu(current)</condition>
+        <form_action>false</form_action>
+        <form_button>false</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>true</form_menu_button_v2>
+        <form_style/>
+        <format_for_configurable_workspace>true</format_for_configurable_workspace>
+        <hint/>
+        <isolate_script>true</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>Compose Email</name>
+        <onclick/>
+        <order>100</order>
+        <script/>
+        <show_insert>false</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-22 22:44:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>af11583a97d22dd051637d271153af9c</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Compose Email</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Safe Workplace" source="x_1007530_safety_0">21dae86197c2e59051637d271153af33</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Safe Workplace">21dae86197c2e59051637d271153af33</sys_scope>
+        <sys_update_name>sys_ui_action_af11583a97d22dd051637d271153af9c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-23 08:59:33</sys_updated_on>
+        <table>sn_wsd_core_workplace_request</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>
